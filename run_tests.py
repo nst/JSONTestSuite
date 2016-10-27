@@ -276,6 +276,11 @@ programs = {
            "url":"https://github.com/bos/aeson",
            "commands":[os.path.join(PARSERS_DIR, "test_haskell-aeson/testaeson")]
        },
+    "OCaml Yojson":
+       {
+           "url":"https://github.com/mjambon/yojson",
+           "commands":[os.path.join(PARSERS_DIR, "test_ocaml-yojson/testyojson")]
+       },
     "Qt JSON":
         {
             "url":"",
