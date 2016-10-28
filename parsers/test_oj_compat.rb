@@ -19,7 +19,7 @@ begin
     else
         exit 0
     end
-rescue JSON::ParserError => e
+rescue Oj::ParserError => e
     puts(e)
     exit 1
 end
