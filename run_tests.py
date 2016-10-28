@@ -241,6 +241,11 @@ programs = {
            "url":"http://www.newtonsoft.com/json",
            "commands":["/usr/local/share/dotnet/dotnet", os.path.join(PARSERS_DIR, "test_Json.NET/bin/Release/netcoreapp1.0/publish/test_Json.NET.dll")]
        },
+   "Elixir Json":
+         {
+             "url":"https://github.com/cblage/elixir-json",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_json/test_elixir_json") ]
+         },
 }
 
 def run_tests(restrict_to_path=None):
