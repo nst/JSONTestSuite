@@ -246,6 +246,11 @@ programs = {
              "url":"https://github.com/cblage/elixir-json",
              "commands":[ os.path.join( PARSERS_DIR, "test_elixir_json/test_elixir_json") ]
          },
+   "Elixir ExJSON":
+         {
+             "url":"https://github.com/guedes/exjson",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_exjson/test_elixir_exjson") ]
+         },
 }
 
 def run_tests(restrict_to_path=None):
