@@ -251,6 +251,11 @@ programs = {
              "url":"https://github.com/guedes/exjson",
              "commands":[ os.path.join( PARSERS_DIR, "test_elixir_exjson/test_elixir_exjson") ]
          },
+   "Elixir Poison":
+         {
+             "url":"https://github.com/devinus/poison",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_poison/test_elixir_poison") ]
+         },
 }
 
 def run_tests(restrict_to_path=None):
