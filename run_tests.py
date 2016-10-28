@@ -14,6 +14,8 @@ LOGS_DIR_PATH = os.path.join(BASE_DIR, "results")
 LOG_FILENAME = "logs.txt"
 LOG_FILE_PATH = os.path.join(LOGS_DIR_PATH, LOG_FILENAME)
 
+INVALID_BINARY_FORMAT = 8
+
 programs = {
     "Bash JSON.sh 2016-08-12":
         {
@@ -314,6 +316,11 @@ def run_tests(restrict_to_path=None):
                     log_file.write("%s\n" % s)
                     print("RESULT:", result)
                     continue
+                except OSError as e:
+                    if e.errno == INVALID_BINARY_FORMAT:
+                        print("-- skip invalid-binary", commands[0])
+                        continue
+                    raise e
 
                 if use_stdin:
                     my_stdin.close()
