@@ -41,6 +41,11 @@ Run all parsers with a specific file:
 
     $ python3 run_tests.py file.json
 
+Run specific parsers with all files:
+
+    $ echo '["Python 2.7.10", "Python 3.5.2"]' > python_only.json
+    $ python3 run_tests.py --filter=python_only.json
+
 The script writes logs in `results/logs.txt`.
 
 The script then reads `logs.txt` and generates `results/parsing.html`.
