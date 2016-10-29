@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
+import io
 import os
+import os.path
 import subprocess
 import sys
+import json
 
 from os import listdir
 from time import strftime
@@ -106,6 +109,13 @@ programs = {
            "url":"",
            "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_json.py")]
        },
+
+   "Python 3.5.2":
+       {
+           "url":"",
+           "commands":["/usr/bin/env", "python3.5", os.path.join(PARSERS_DIR, "test_json.py")]
+       },
+
    "Perl JSON":
        {
            "url":"",
@@ -263,14 +273,20 @@ programs = {
        },
 }
 
-def run_tests(restrict_to_path=None):
+def run_tests(restrict_to_path=None, restrict_to_program=None):
     
     FNULL = open(os.devnull, 'w')
     log_file = open(LOG_FILE_PATH, 'w')
     
     prog_names = list(programs.keys())
     prog_names.sort()
-        
+
+    if isinstance(restrict_to_program, io.TextIOBase):
+        restrict_to_program = json.load(restrict_to_program)
+
+    if restrict_to_program:
+        prog_names = filter(lambda x: x in restrict_to_program, prog_names)
+
     for prog_name in prog_names:
         d = programs[prog_name]
         
@@ -658,21 +674,30 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
         
         </HTML>
         """)
-    
-    os.system('/usr/bin/open "%s"' % report_path)
+    if os.path.exists('/usr/bin/open'):
+        os.system('/usr/bin/open "%s"' % report_path)
 
 ###
 
 if __name__ == '__main__':
     
     restrict_to_path = None
+    """
     if len(sys.argv) == 2:
         restrict_to_path = os.path.join(BASE_DIR, sys.argv[1])
         if not os.path.exists(restrict_to_path):
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
-    
-    #run_tests(restrict_to_path)
-    
+    """
+    restrict_to_program = ["Python 2.7.10", "Python 3.5.2"]
+
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('restrict_to_path', nargs='?', type=str, default=None)
+    parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
+
+    args = parser.parse_args()
+    run_tests(args.restrict_to_path, args.restrict_to_program)
+        
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)
