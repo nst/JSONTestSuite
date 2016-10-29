@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>test-cJSON.xcscheme</key>
+		<key>test_json_c.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03B1DD391D567D8400FEDE27</key>
+		<key>03FA92D71DC5402C0003C01D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

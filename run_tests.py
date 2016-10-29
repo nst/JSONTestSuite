@@ -186,6 +186,11 @@ programs = {
            "url":"https://github.com/DaveGamble/cJSON",
            "commands":[os.path.join(PARSERS_DIR, "test_cJSON/bin/test-cJSON")]
        },
+   "C JSON-C":
+       {
+           "url":"https://github.com/json-c/json-c",
+           "commands":[os.path.join(PARSERS_DIR, "test_json-c/bin/test_json-c")]
+       },
    "C JSON Parser by udp":
        {
            "url":"https://github.com/udp/json-parser",
@@ -667,7 +672,7 @@ if __name__ == '__main__':
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
     
-    run_tests(restrict_to_path)
+    #run_tests(restrict_to_path)
     
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)

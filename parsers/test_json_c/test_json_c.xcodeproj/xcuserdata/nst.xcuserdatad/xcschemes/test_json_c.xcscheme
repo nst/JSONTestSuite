@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03B1DD391D567D8400FEDE27"
-               BuildableName = "test-cJSON"
-               BlueprintName = "test-cJSON"
-               ReferencedContainer = "container:test-cJSON.xcodeproj">
+               BlueprintIdentifier = "03FA92D71DC5402C0003C01D"
+               BuildableName = "test_json_c"
+               BlueprintName = "test_json_c"
+               ReferencedContainer = "container:test_json_c.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03B1DD391D567D8400FEDE27"
-            BuildableName = "test-cJSON"
-            BlueprintName = "test-cJSON"
-            ReferencedContainer = "container:test-cJSON.xcodeproj">
+            BlueprintIdentifier = "03FA92D71DC5402C0003C01D"
+            BuildableName = "test_json_c"
+            BlueprintName = "test_json_c"
+            ReferencedContainer = "container:test_json_c.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,12 +55,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03B1DD391D567D8400FEDE27"
-            BuildableName = "test-cJSON"
-            BlueprintName = "test-cJSON"
-            ReferencedContainer = "container:test-cJSON.xcodeproj">
+            BlueprintIdentifier = "03FA92D71DC5402C0003C01D"
+            BuildableName = "test_json_c"
+            BlueprintName = "test_json_c"
+            ReferencedContainer = "container:test_json_c.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/nst/Desktop/json_test_files/long-string.json"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -74,10 +80,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03B1DD391D567D8400FEDE27"
-            BuildableName = "test-cJSON"
-            BlueprintName = "test-cJSON"
-            ReferencedContainer = "container:test-cJSON.xcodeproj">
+            BlueprintIdentifier = "03FA92D71DC5402C0003C01D"
+            BuildableName = "test_json_c"
+            BlueprintName = "test_json_c"
+            ReferencedContainer = "container:test_json_c.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

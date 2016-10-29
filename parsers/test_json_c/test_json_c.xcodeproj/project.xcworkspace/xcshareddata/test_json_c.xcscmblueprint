@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "52FB43970EAA11C3F1EB9CFA9453DC98079A2F33",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "52FB43970EAA11C3F1EB9CFA9453DC98079A2F33" : 9223372036854775807,
+    "B38C14663FCFBB7024902D2DB1D013964189DC3B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FBCDF013-3052-44D5-8183-DB7CB5ACD6C1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "52FB43970EAA11C3F1EB9CFA9453DC98079A2F33" : "JSONTestSuite\/",
+    "B38C14663FCFBB7024902D2DB1D013964189DC3B" : "JSONTestSuite\/parsers\/test_json-c\/json-c\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "test_json_c",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "parsers\/test_json_c\/test_json_c.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nst\/JSONTestSuite.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52FB43970EAA11C3F1EB9CFA9453DC98079A2F33"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/json-c\/json-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B38C14663FCFBB7024902D2DB1D013964189DC3B"
+    }
+  ]
+}
