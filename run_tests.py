@@ -712,13 +712,13 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
 if __name__ == '__main__':
     
     restrict_to_path = None
-    """
+    
     if len(sys.argv) == 2:
         restrict_to_path = os.path.join(BASE_DIR, sys.argv[1])
         if not os.path.exists(restrict_to_path):
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
-    """
+    
     #restrict_to_program = ["Python 2.7.10", "Python 3.5.2"]
 
     import argparse
@@ -727,7 +727,7 @@ if __name__ == '__main__':
     parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
 
     args = parser.parse_args()
-    #run_tests(args.restrict_to_path, args.restrict_to_program)
+    run_tests(args.restrict_to_path, args.restrict_to_program)
         
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)
