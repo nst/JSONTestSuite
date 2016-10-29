@@ -276,6 +276,21 @@ programs = {
            "url":"http://www.newtonsoft.com/json",
            "commands":["/usr/local/share/dotnet/dotnet", os.path.join(PARSERS_DIR, "test_Json.NET/bin/Release/netcoreapp1.0/publish/test_Json.NET.dll")]
        },
+   "Elixir Json":
+         {
+             "url":"https://github.com/cblage/elixir-json",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_json/test_elixir_json") ]
+         },
+   "Elixir ExJSON":
+         {
+             "url":"https://github.com/guedes/exjson",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_exjson/test_elixir_exjson") ]
+         },
+   "Elixir Poison":
+         {
+             "url":"https://github.com/devinus/poison",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_poison/test_elixir_poison") ]
+         },
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
