@@ -109,13 +109,16 @@ programs = {
            "url":"",
            "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_json.py")]
        },
-
    "Python 3.5.2":
        {
            "url":"",
            "commands":["/usr/bin/env", "python3.5", os.path.join(PARSERS_DIR, "test_json.py")]
        },
-
+   "Python ujson 1.35": # pip install ujson
+       {
+           "url":"https://pypi.python.org/pypi/ujson",
+           "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_ujson.py")]
+       },
    "Perl JSON":
        {
            "url":"",
@@ -689,7 +692,7 @@ if __name__ == '__main__':
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
     """
-    restrict_to_program = ["Python 2.7.10", "Python 3.5.2"]
+    #restrict_to_program = ["Python 2.7.10", "Python 3.5.2"]
 
     import argparse
     parser = argparse.ArgumentParser()
