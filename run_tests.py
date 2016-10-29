@@ -121,6 +121,11 @@ programs = {
            "url":"https://pypi.python.org/pypi/ujson",
            "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_ujson.py")]
        },
+   "Python simplejson 3.10": # pip install simplejson
+       {
+           "url":"https://pypi.python.org/pypi/simplejson",
+           "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_simplejson.py")]
+       },
    "Perl JSON":
        {
            "url":"",
@@ -722,7 +727,7 @@ if __name__ == '__main__':
     parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
 
     args = parser.parse_args()
-    run_tests(args.restrict_to_path, args.restrict_to_program)
+    #run_tests(args.restrict_to_path, args.restrict_to_program)
         
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)

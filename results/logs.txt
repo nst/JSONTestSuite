@@ -1244,6 +1244,32 @@ Python 3.5.2	SHOULD_HAVE_FAILED	n_number_minus_infinity.json
 Python 3.5.2	SHOULD_HAVE_FAILED	n_number_NaN.json
 Python 3.5.2	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Python 3.5.2	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_and_escape_valid.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_pair.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_invalid_lonely_surrogate.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_invalid_surrogate.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
+Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
+Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
+Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
+Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_structure_UTF-8_BOM_empty_object.json
+Python simplejson 3.10	SHOULD_HAVE_FAILED	n_number_infinity.json
+Python simplejson 3.10	SHOULD_HAVE_FAILED	n_number_minus_infinity.json
+Python simplejson 3.10	SHOULD_HAVE_FAILED	n_number_NaN.json
+Python simplejson 3.10	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
+Python simplejson 3.10	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
+Python simplejson 3.10	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Python ujson 1.35	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
