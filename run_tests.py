@@ -582,7 +582,7 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
 
         title = "JSON Parsing Tests"
         if keep_only_first_result_in_set:
-            title += ", Prunned"
+            title += ", Pruned"
         else:
             title += ", Full"
         f.write("<H1>%s</H1>\n" % title)
