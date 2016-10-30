@@ -1,25 +1,23 @@
 #!/usr/bin/perl
 
-#use strict;
-use warnings;
 use JSON;
+use warnings;
 
 my $path = $ARGV[0];
 
 open( my $fh, '<', $path ) or die "Can't open $path: $!";
 
-my $jsonWasDecoded = 0;
+my $output;
 
-my $text = "";
+# no decode_json as we need allow_nonref for RFC 7159
+my $json = JSON->new->utf8->allow_nonref; # RFC 7159
 
 my $data = do { local $/; <$fh> };
 eval {
-    $text = from_json( $data, { allow_nonref => 1, utf8 => 1, relaxed => 1 } );
-    #$text = JSON->new->utf8->allow_nonref->decode($data); # TODO: should use decode_json
+    $output = $json->decode ($data);
 };
-$jsonWasDecoded = $text ne "";
-
-close $fh;
+# $EVAL_ERROR ($@) is set to "" (false) if no error was detected
+my $jsonWasDecoded = ! $@;
 
 if ($jsonWasDecoded) {
     exit 0;
