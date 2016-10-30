@@ -131,6 +131,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json.pl")]
        },
+   "Perl JSON::PP": # part of default install in perl >= v5.14
+       {
+           "url":"http://search.cpan.org/dist/JSON-PP/",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_pp.pl")]
+       },
    "Perl JSON::XS":
        {
            "url":"http://search.cpan.org/dist/JSON-XS/XS.pm",
