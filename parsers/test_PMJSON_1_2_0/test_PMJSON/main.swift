@@ -23,14 +23,8 @@ func main() {
     do {
         let data = try Data(contentsOf:url)
         
-
         do {
-            let json = try JSON.decode(data)
-            
-            guard json != nil else {
-                exit(1)
-            }
-            
+            _ = try JSON.decode(data, options: [.depthLimit(1000), .strict])
             exit(0)
         } catch let e {
             print(e)

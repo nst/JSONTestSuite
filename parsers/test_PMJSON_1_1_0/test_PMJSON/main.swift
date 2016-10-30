@@ -25,12 +25,7 @@ func main() {
         
 
         do {
-            let json = try JSON.decode(data, strict:true)
-            
-            guard json != nil else {
-                exit(1)
-            }
-            
+            _ = try JSON.decode(data, strict:true)
             exit(0)
         } catch let e {
             print(e)
