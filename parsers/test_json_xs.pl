@@ -1,7 +1,5 @@
 #!/usr/bin/perl
 
-# cpan install Test::JSON
-
 use JSON::XS;
 use warnings;
 
@@ -9,18 +7,19 @@ my $path = $ARGV[0];
 
 open( my $fh, '<', $path ) or die "Can't open $path: $!";
 
-my $output = 0;
+my $output;
 
-my $json = JSON::XS->new->utf8->allow_nonref; # RFC 7159 // TODO: try with utf8 enabled, means you get an UTF-8 encoded octet/binary
+# no decode_json as we need allow_nonref for RFC 7159
+my $json = JSON::XS->new->utf8->allow_nonref; # RFC 7159
 
 my $data = do { local $/; <$fh> };
 eval {
     $output = $json->decode ($data);
 };
+# $EVAL_ERROR ($@) is set to "" (false) if no error was detected
+my $jsonWasDecoded = ! $@;
 
-close $fh;
-
-if ($output != 0) {
+if ($jsonWasDecoded) {
     exit 0;
 }
 
