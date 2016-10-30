@@ -126,6 +126,11 @@ programs = {
            "url":"https://pypi.python.org/pypi/simplejson",
            "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_simplejson.py")]
        },
+   "Perl Cpanel::JSON::XS":
+       {
+           "url":"http://search.cpan.org/dist/Cpanel-JSON-XS/",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_cpanel_json_xs.pl")]
+       },
    "Perl JSON":
        {
            "url":"",
