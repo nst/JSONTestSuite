@@ -9,7 +9,7 @@ This directory contains several parsers and tiny wrappers to turn the parsers in
 
 - `0` the parser did accept the content
 - `1` the parser did reject the content
-- `>=1` the process did crash
+- `>1` the process did crash
 - `timeout` happens after 5 seconds
 
 **/test\_parsing/**
