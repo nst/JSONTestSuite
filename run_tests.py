@@ -61,6 +61,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_go/test_json")]
        },
+   "Free Pascal fcl-json":
+       {
+           "url":"",
+           "commands":[os.path.join(PARSERS_DIR, "test_fpc/test_json")]
+       },
    "Lua JSON 20160916.19":
        {
            "url":"http://regex.info/blog/lua/json",
