@@ -61,6 +61,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_go/test_json")]
        },
+   "Free Pascal fcl-json":
+       {
+           "url":"",
+           "commands":[os.path.join(PARSERS_DIR, "test_fpc/test_json")]
+       },
    "Lua JSON 20160916.19":
        {
            "url":"http://regex.info/blog/lua/json",
@@ -314,10 +319,10 @@ programs = {
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
-    
+
     FNULL = open(os.devnull, 'w')
     log_file = open(LOG_FILE_PATH, 'w')
-    
+
     prog_names = list(programs.keys())
     prog_names.sort()
 
@@ -329,27 +334,27 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
 
     for prog_name in prog_names:
         d = programs[prog_name]
-        
+
         url = d["url"]
         commands = d["commands"]
 
         if not os.path.exists(commands[0]):
             print("-- skip non-existing", commands[0])
             continue
-        
+
         for root, dirs, files in os.walk(TEST_CASES_DIR_PATH):
             json_files = (f for f in files if f.endswith(".json"))
             for filename in json_files:
-            
+
                 if restrict_to_path:
                     restrict_to_filename = os.path.basename(restrict_to_path)
                     if filename != restrict_to_filename:
                         continue
-            
+
                 file_path = os.path.join(root, filename)
-                
+
                 my_stdin = FNULL
-                
+
                 use_stdin = "use_stdin" in d and d["use_stdin"]
                 if use_stdin:
                     my_stdin = open(file_path, "rb")
@@ -359,7 +364,7 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
 
                 #print("->", a)
                 print("--", " ".join(a))
-                
+
                 try:
                     status = subprocess.call(
                         a,
@@ -383,7 +388,7 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
 
                 if use_stdin:
                     my_stdin.close()
-                                                
+
                 result = None
                 if status == 0:
                     result = "PASS"
@@ -391,7 +396,7 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
                     result == "FAIL"
                 else:
                     result = "CRASH"
-                
+
                 s = None
                 if result == "CRASH":
                     s = "%s\tCRASH\t%s" % (prog_name, filename)
@@ -407,42 +412,42 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
                 if s != None:
                     print(s)
                     log_file.write("%s\n" % s)
-    
+
     FNULL.close()
     log_file.close()
 
 def f_underline_non_printable_bytes(bytes):
-	
+
     html = ""
 
     has_non_printable_characters = False
-    
+
     for b in bytes:
-        
+
         is_not_printable = b < 0x20 or b > 0x7E
-        
+
         has_non_printable_characters |= is_not_printable
-        
+
         if is_not_printable:
             html += "<U>%02X</U>" % b
         else:
             html += "%c" % b
-    
+
     if has_non_printable_characters:
         try:
             html += " <=> %s" % bytes.decode("utf-8", errors='ignore')
         except:
             pass
-        
+
     if len(bytes) > 36:
         return "%s(...)" % html[:36]
-    
+
     return html
-    
+
 def f_status_for_lib_for_file(json_dir, results_dir):
 
     txt_filenames = [f for f in listdir(results_dir) if f.endswith(".txt")]
-    
+
     # comment to ignore some tests
     statuses = [
         "SHOULD_HAVE_FAILED",
@@ -452,16 +457,16 @@ def f_status_for_lib_for_file(json_dir, results_dir):
 
         "IMPLEMENTATION_FAIL",
         "IMPLEMENTATION_PASS",
-        
+
         "TIMEOUT"
     ]
-    
+
     d = {}
     libs = []
-        
+
     for filename in txt_filenames:
         path = os.path.join(results_dir, filename)
-        
+
         with open(path) as f:
             for l in f:
                 comps = l.split("\t")
@@ -472,23 +477,23 @@ def f_status_for_lib_for_file(json_dir, results_dir):
                     print("-- unhandled status:", comps[1])
 
                 (lib, status, json_filename) = (comps[0], comps[1], comps[2].rstrip())
-                
+
                 if lib not in libs:
                     libs.append(lib)
-                
+
                 json_path = os.path.join(TEST_CASES_DIR_PATH, json_filename)
-                
+
                 if json_path not in d:
                     d[json_path] = {}
-                                    
+
                 d[json_path][lib] = status
-    
+
     return d, libs
 
 def f_status_for_path_for_lib(json_dir, results_dir):
-    
+
     txt_filenames = [f for f in listdir(results_dir) if f.endswith(".txt")]
-    
+
     # comment to ignore some tests
     statuses = [
         "SHOULD_HAVE_FAILED",
@@ -498,35 +503,35 @@ def f_status_for_path_for_lib(json_dir, results_dir):
 
         "IMPLEMENTATION_FAIL",
         "IMPLEMENTATION_PASS",
-        
+
         "TIMEOUT"
 
     ]
-    
+
     d = {} # d['lib']['file'] = status
-    
+
     for filename in txt_filenames:
         path = os.path.join(results_dir, filename)
-        
+
         with open(path) as f:
             for l in f:
                 comps = l.split("\t")
                 if len(comps) != 3:
                     continue
-                
+
                 if comps[1] not in statuses:
                     #print "-- unhandled status:", comps[1]
                     continue
-                
+
                 (lib, status, json_filename) = (comps[0], comps[1], comps[2].rstrip())
-                
+
                 if lib not in d:
                     d[lib] = {}
-                
+
                 json_path = os.path.join(TEST_CASES_DIR_PATH, json_filename)
 
                 d[lib][json_path] = status
-    
+
     return d
 
 def f_tests_with_same_results(libs, status_for_lib_for_file):
@@ -535,7 +540,7 @@ def f_tests_with_same_results(libs, status_for_lib_for_file):
 
     files = list(status_for_lib_for_file.keys())
     files.sort()
-    
+
     for f in files:
         prefix = os.path.basename(f)[:1]
         lib_status_for_file = []
@@ -548,40 +553,40 @@ def f_tests_with_same_results(libs, status_for_lib_for_file):
         if results not in tests_with_same_results:
             tests_with_same_results[results] = set()
         tests_with_same_results[results].add(f)
-    
+
     r = []
     for k,v in tests_with_same_results.items():
         r.append((k,v))
     r.sort()
-    
+
     return r
 
 def generate_report(report_path, keep_only_first_result_in_set = False):
 
     (status_for_lib_for_file, libs) = f_status_for_lib_for_file(TEST_CASES_DIR_PATH, LOGS_DIR_PATH)
-    
+
     status_for_path_for_lib = f_status_for_path_for_lib(TEST_CASES_DIR_PATH, LOGS_DIR_PATH)
-    
+
     tests_with_same_results = f_tests_with_same_results(libs, status_for_lib_for_file)
-        
+
     with open(report_path, 'w') as f:
-    
+
         f.write("""<!DOCTYPE html>
-        
+
         <HTML>
-        
+
         <HEAD>
             <TITLE>JSON Parsing Tests</TITLE>
             <LINK rel="stylesheet" type="text/css" href="style.css">
             <META charset="UTF-8">
         </HEAD>
-        
+
         <BODY>
         """)
 
         prog_names = list(programs.keys())
         prog_names.sort()
-        
+
         libs = list(status_for_path_for_lib.keys())
         libs.sort()
 
@@ -617,36 +622,36 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
             <TR><TD class="TIMEOUT">timeout</TD><TR>
         </TABLE>
         """)
-        
+
         ###
-        
+
         f.write('<A NAME="all_results"></A>\n')
         f.write("<H4>2. Full Results</H4>\n")
         f.write("<TABLE>\n")
-        
+
         f.write("    <TR>\n")
         f.write("        <TH></TH>\n")
         for lib in libs:
             f.write('        <TH class="vertical"><DIV>%s</DIV></TH>\n' % lib)
         f.write("        <TH></TH>\n")
         f.write("    </TR>\n")
-        
+
         for (k, file_set) in tests_with_same_results:
-            
+
             ordered_file_set = list(file_set)
             ordered_file_set.sort()
-            
+
             if keep_only_first_result_in_set:
                 ordered_file_set = [ordered_file_set[0]]
-            
+
             for path in [path for path in ordered_file_set if os.path.exists(path)]:
-            
+
                 f.write("    <TR>\n")
                 f.write('        <TD>%s</TD>' % os.path.basename(path))
-                
+
                 status_for_lib = status_for_lib_for_file[path]
                 bytes = open(path, "rb").read()
-            
+
                 for lib in libs:
                     if lib in status_for_lib:
                         status = status_for_lib[lib]
@@ -655,12 +660,12 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
                         f.write('        <TD class="EXPECTED_RESULT"></TD>')
                 f.write('        <TD>%s</TD>' % f_underline_non_printable_bytes(bytes))
                 f.write("    </TR>")
-        
+
         f.write("</TABLE>\n")
-        
-        
+
+
         ###
-        
+
         f.write('<A NAME="results_by_parser"></A>\n')
         f.write("<H4>3. Results by Parser</H4>")
         for i, prog in enumerate(prog_names):
@@ -673,7 +678,7 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
                 f.write('<H4>%s</H4>\n' % prog)
 
             ###
-            
+
             if prog not in status_for_path_for_lib:
                 continue
             status_for_path = status_for_path_for_lib[prog]
@@ -688,12 +693,12 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
             f.write('        <TH class="space"><DIV></DIV></TH>\n')
             f.write("        <TH></TH>\n")
             f.write("    </TR>\n")
-            
+
             for path in paths:
-                    
+
                 f.write("    <TR>\n")
                 f.write("        <TD>%s</TD>" % os.path.basename(path))
-                
+
                 status_for_lib = status_for_lib_for_file[path]
                 if os.path.exists(path):
                     bytes = open(path, "rb").read()
@@ -707,16 +712,16 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
                     f.write("        <TD></TD>")
                 f.write("        <TD>%s</TD>" % f_underline_non_printable_bytes(bytes))
                 f.write("    </TR>")
-    
+
             f.write('</TABLE>\n')
             f.write("</P>\n")
-        
+
         ###
 
         f.write("""
-        
+
         </BODY>
-        
+
         </HTML>
         """)
     if os.path.exists('/usr/bin/open'):
@@ -725,7 +730,7 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
 ###
 
 if __name__ == '__main__':
-    
+
     restrict_to_path = None
     """
     if len(sys.argv) == 2:
@@ -743,6 +748,6 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     run_tests(args.restrict_to_path, args.restrict_to_program)
-        
+
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)
