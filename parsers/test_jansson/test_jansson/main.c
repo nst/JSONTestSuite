@@ -141,7 +141,7 @@ json_t *load_json(const char *text, int printParsingResults) {
     json_t *root;
     json_error_t error;
     
-    root = json_loads(text, 0, &error);
+    root = json_loads(text, JSON_DECODE_ANY|JSON_ALLOW_NUL, &error);
     
     if (root) {
         return root;

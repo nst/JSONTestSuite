@@ -298,6 +298,7 @@ C jansson	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C jansson	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 C jansson	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
 C jansson	IMPLEMENTATION_FAIL	i_structure_UTF-8_BOM_empty_object.json
+C jansson	SHOULD_HAVE_FAILED	n_multidigit_number_then_00.json
 C jansson	SHOULD_HAVE_PASSED	y_number_huge_exp.json
 C jansson	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
 C jansson	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
@@ -307,17 +308,8 @@ C jansson	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
 C jansson	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
 C jansson	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
 C jansson	SHOULD_HAVE_PASSED	y_object_escaped_null_in_key.json
-C jansson	SHOULD_HAVE_PASSED	y_string_null_escape.json
-C jansson	SHOULD_HAVE_PASSED	y_string_space.json
 C jansson	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 C jansson	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_lonely_false.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_lonely_int.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_lonely_negative_real.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_lonely_string.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_lonely_true.json
-C jansson	SHOULD_HAVE_PASSED	y_structure_string_empty.json
 C jsmn	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 C jsmn	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 C jsmn	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
