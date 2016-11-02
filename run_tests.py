@@ -476,6 +476,7 @@ def f_status_for_lib_for_file(json_dir, results_dir):
             for l in f:
                 comps = l.split("\t")
                 if len(comps) != 3:
+                    print("***", comps)
                     continue
 
                 if comps[1] not in statuses:
