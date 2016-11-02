@@ -80,10 +80,10 @@ th.space > div {
 
 .IMPLEMENTATION_PASS {
 	border: 1px solid black;
-	background-color: #0066FF;
+	background-color: #66CCFF;
 }
 
 .IMPLEMENTATION_FAIL {
 	border: 1px solid black;
-	background-color: #66CCFF;
+	background-color: #0066FF;
 }
