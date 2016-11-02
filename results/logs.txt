@@ -48,6 +48,16 @@ Bash JSON.sh 2016-08-12	CRASH	n_structure_open_array_object.json
 Bash JSON.sh 2016-08-12	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
 Bash JSON.sh 2016-08-12	SHOULD_HAVE_PASSED	y_string_unescaped_char_delete.json
 Bash JSON.sh 2016-08-12	SHOULD_HAVE_PASSED	y_string_with_del_character.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_number_real_underflow.json
 C JSON Checker	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 C JSON Checker	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 C JSON Checker	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -94,6 +104,16 @@ C JSON Checker	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_structure_lonely_string.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_structure_lonely_true.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_structure_string_empty.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_huge_exp.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C JSON Checker	IMPLEMENTATION_PASS	i_number_real_underflow.json
 C JSON Checker 2	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 C JSON Checker 2	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 C JSON Checker 2	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -132,6 +152,16 @@ C JSON Checker 2	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_structure_lonely_string.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_structure_lonely_true.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_structure_string_empty.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_huge_exp.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C JSON Checker 2	IMPLEMENTATION_PASS	i_number_real_underflow.json
 C JSON Parser by udp	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 C JSON Parser by udp	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -176,6 +206,16 @@ C JSON Parser by udp	SHOULD_HAVE_FAILED	n_string_unicode_CapitalU.json
 C JSON Parser by udp	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 C JSON Parser by udp	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 C JSON Parser by udp	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_huge_exp.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C JSON Parser by udp	IMPLEMENTATION_PASS	i_number_real_underflow.json
 C cJSON	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 C cJSON	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 C cJSON	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -251,6 +291,16 @@ C cJSON	SHOULD_HAVE_PASSED	y_object_escaped_null_in_key.json
 C cJSON	SHOULD_HAVE_PASSED	y_string_null_escape.json
 C cJSON	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 C cJSON	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+C cJSON	IMPLEMENTATION_PASS	i_number_huge_exp.json
+C cJSON	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C cJSON	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C cJSON	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C cJSON	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C cJSON	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C cJSON	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C cJSON	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C cJSON	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C cJSON	IMPLEMENTATION_PASS	i_number_real_underflow.json
 C ccan	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 C ccan	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 C ccan	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -278,6 +328,26 @@ C ccan	SHOULD_HAVE_PASSED	y_object_escaped_null_in_key.json
 C ccan	SHOULD_HAVE_PASSED	y_string_null_escape.json
 C ccan	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 C ccan	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+C ccan	IMPLEMENTATION_PASS	i_number_huge_exp.json
+C ccan	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C ccan	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C ccan	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C ccan	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C ccan	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C ccan	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C ccan	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C ccan	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C ccan	IMPLEMENTATION_PASS	i_number_real_underflow.json
+C jansson	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C jansson	IMPLEMENTATION_FAIL	i_number_huge_exp.json
+C jansson	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
+C jansson	IMPLEMENTATION_FAIL	i_number_pos_double_huge_exp.json
+C jansson	IMPLEMENTATION_FAIL	i_number_real_neg_overflow.json
+C jansson	IMPLEMENTATION_FAIL	i_number_real_pos_overflow.json
+C jansson	IMPLEMENTATION_PASS	i_number_real_underflow.json
+C jansson	IMPLEMENTATION_FAIL	i_number_too_big_neg_int.json
+C jansson	IMPLEMENTATION_FAIL	i_number_too_big_pos_int.json
+C jansson	IMPLEMENTATION_FAIL	i_number_very_big_negative_int.json
 C jansson	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 C jansson	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 C jansson	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -299,14 +369,6 @@ C jansson	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 C jansson	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
 C jansson	IMPLEMENTATION_FAIL	i_structure_UTF-8_BOM_empty_object.json
 C jansson	SHOULD_HAVE_FAILED	n_multidigit_number_then_00.json
-C jansson	SHOULD_HAVE_PASSED	y_number_huge_exp.json
-C jansson	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
-C jansson	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
-C jansson	SHOULD_HAVE_PASSED	y_number_real_neg_overflow.json
-C jansson	SHOULD_HAVE_PASSED	y_number_real_pos_overflow.json
-C jansson	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
-C jansson	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
-C jansson	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
 C jansson	SHOULD_HAVE_PASSED	y_object_escaped_null_in_key.json
 C jansson	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 C jansson	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
@@ -442,11 +504,30 @@ C jsmn	SHOULD_HAVE_FAILED	n_structure_object_with_comment.json
 C jsmn	SHOULD_HAVE_FAILED	n_structure_object_with_trailing_garbage.json
 C jsmn	SHOULD_HAVE_FAILED	n_structure_single_star.json
 C jsmn	SHOULD_HAVE_FAILED	n_structure_uescaped_LF_before_string.json
-C jsmn	SHOULD_HAVE_PASSED	y_number_huge_exp.json
+C jsmn	IMPLEMENTATION_FAIL	i_number_huge_exp.json
 C jsmn	SHOULD_HAVE_PASSED	y_object_long_strings.json
 C jsmn	SHOULD_HAVE_PASSED	y_object_string_unicode.json
 C jsmn	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 C jsmn	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+C jsmn	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C jsmn	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C jsmn	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C jsmn	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C jsmn	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C jsmn	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C jsmn	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C jsmn	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C jsmn	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Go 1.7.1	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Go 1.7.1	IMPLEMENTATION_FAIL	i_number_huge_exp.json
+Go 1.7.1	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
+Go 1.7.1	IMPLEMENTATION_FAIL	i_number_pos_double_huge_exp.json
+Go 1.7.1	IMPLEMENTATION_FAIL	i_number_real_neg_overflow.json
+Go 1.7.1	IMPLEMENTATION_FAIL	i_number_real_pos_overflow.json
+Go 1.7.1	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Go 1.7.1	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Go 1.7.1	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Go 1.7.1	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -474,11 +555,6 @@ Go 1.7.1	SHOULD_HAVE_FAILED	n_string_overlong_sequence_2_bytes.json
 Go 1.7.1	SHOULD_HAVE_FAILED	n_string_overlong_sequence_6_bytes.json
 Go 1.7.1	SHOULD_HAVE_FAILED	n_string_overlong_sequence_6_bytes_null.json
 Go 1.7.1	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
-Go 1.7.1	SHOULD_HAVE_PASSED	y_number_huge_exp.json
-Go 1.7.1	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
-Go 1.7.1	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
-Go 1.7.1	SHOULD_HAVE_PASSED	y_number_real_neg_overflow.json
-Go 1.7.1	SHOULD_HAVE_PASSED	y_number_real_pos_overflow.json
 Go 1.7.1	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Go 1.7.1	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
@@ -524,6 +600,16 @@ Java Jackson 2.8.4	SHOULD_HAVE_FAILED	n_structure_object_with_trailing_garbage.j
 Java Jackson 2.8.4	SHOULD_HAVE_FAILED	n_structure_trailing_#.json
 Java Jackson 2.8.4	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Java Jackson 2.8.4	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -570,9 +656,18 @@ Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_FAILED	n_string_unescaped_newline.
 Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
 Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
-Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_PASSED	y_number_huge_exp.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_FAIL	i_number_huge_exp.json
 Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Java com.leastfixedpoint.json 1.0	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -694,6 +789,26 @@ Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_whitespace_U+2060_word_joiner.json
 Java gson 2.7	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Java gson 2.7	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Java gson 2.7	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Java gson 2.7	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Java json-simple 1.1.1	IMPLEMENTATION_FAIL	i_number_too_big_neg_int.json
+Java json-simple 1.1.1	IMPLEMENTATION_FAIL	i_number_too_big_pos_int.json
+Java json-simple 1.1.1	IMPLEMENTATION_FAIL	i_number_very_big_negative_int.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -759,9 +874,6 @@ Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_unescaped_newline.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_unicode_CapitalU.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
-Java json-simple 1.1.1	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
-Java json-simple 1.1.1	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
-Java json-simple 1.1.1	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
 Java json-simple 1.1.1	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Java json-simple 1.1.1	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Java nanojson 1.0	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
@@ -791,6 +903,16 @@ Java nanojson 1.0	SHOULD_HAVE_FAILED	n_number_2.e-3.json
 Java nanojson 1.0	SHOULD_HAVE_FAILED	n_number_2.e3.json
 Java nanojson 1.0	SHOULD_HAVE_FAILED	n_number_real_without_fractional_part.json
 Java nanojson 1.0	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Java nanojson 1.0	IMPLEMENTATION_PASS	i_number_real_underflow.json
 JavaScript	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 JavaScript	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 JavaScript	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -820,6 +942,16 @@ JavaScript	SHOULD_HAVE_FAILED	n_string_overlong_sequence_6_bytes_null.json
 JavaScript	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 JavaScript	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 JavaScript	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+JavaScript	IMPLEMENTATION_PASS	i_number_huge_exp.json
+JavaScript	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+JavaScript	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+JavaScript	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+JavaScript	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+JavaScript	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+JavaScript	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+JavaScript	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+JavaScript	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+JavaScript	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -884,6 +1016,16 @@ Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_structure_trailing_#.json
 Lua JSON 20160916.19	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Lua JSON 20160916.19	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Lua JSON 20160916.19	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Lua dkjson	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Lua dkjson	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Lua dkjson	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -977,6 +1119,26 @@ Lua dkjson	SHOULD_HAVE_FAILED	n_structure_trailing_#.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
 Lua dkjson	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Lua dkjson	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Lua dkjson	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_number_double_huge_neg_exp.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_number_huge_exp.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_number_pos_double_huge_exp.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_number_real_pos_overflow.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_number_real_underflow.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1000,12 +1162,6 @@ Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_structure_UTF-8_BOM_empty_
 Obj-C Apple NSJSONSerialization	SHOULD_HAVE_FAILED	n_array_extra_comma.json
 Obj-C Apple NSJSONSerialization	SHOULD_HAVE_FAILED	n_array_number_and_comma.json
 Obj-C Apple NSJSONSerialization	SHOULD_HAVE_FAILED	n_object_trailing_comma.json
-Obj-C Apple NSJSONSerialization	SHOULD_HAVE_PASSED	y_number_double_huge_neg_exp.json
-Obj-C Apple NSJSONSerialization	SHOULD_HAVE_PASSED	y_number_huge_exp.json
-Obj-C Apple NSJSONSerialization	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
-Obj-C Apple NSJSONSerialization	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
-Obj-C Apple NSJSONSerialization	SHOULD_HAVE_PASSED	y_number_real_pos_overflow.json
-Obj-C Apple NSJSONSerialization	SHOULD_HAVE_PASSED	y_number_real_underflow.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1029,16 +1185,16 @@ Obj-C JSONKit	IMPLEMENTATION_FAIL	i_structure_UTF-8_BOM_empty_object.json
 Obj-C JSONKit	CRASH	n_structure_100000_opening_arrays.json
 Obj-C JSONKit	CRASH	n_structure_no_data.json
 Obj-C JSONKit	CRASH	n_structure_open_array_object.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_double_huge_neg_exp.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_huge_exp.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_real_neg_overflow.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_real_pos_overflow.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_real_underflow.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
-Obj-C JSONKit	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_double_huge_neg_exp.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_huge_exp.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_pos_double_huge_exp.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_real_neg_overflow.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_real_pos_overflow.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_real_underflow.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_too_big_neg_int.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_too_big_pos_int.json
+Obj-C JSONKit	IMPLEMENTATION_FAIL	i_number_very_big_negative_int.json
 Obj-C JSONKit	SHOULD_HAVE_PASSED	y_object_escaped_null_in_key.json
 Obj-C JSONKit	SHOULD_HAVE_PASSED	y_string_escaped_noncharacter.json
 Obj-C JSONKit	SHOULD_HAVE_PASSED	y_string_last_surrogates_1_and_2.json
@@ -1107,6 +1263,16 @@ Obj-C SBJSON 4.0.3	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
 Obj-C SBJSON 4.0.3	SHOULD_HAVE_PASSED	y_structure_lonely_string.json
 Obj-C SBJSON 4.0.3	SHOULD_HAVE_PASSED	y_structure_lonely_true.json
 Obj-C SBJSON 4.0.3	SHOULD_HAVE_PASSED	y_structure_string_empty.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1156,6 +1322,16 @@ Obj-C TouchJSON	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
 Obj-C TouchJSON	CRASH	n_structure_100000_opening_arrays.json
 Obj-C TouchJSON	CRASH	n_structure_open_array_object.json
 Obj-C TouchJSON	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Obj-C TouchJSON	IMPLEMENTATION_PASS	i_number_real_underflow.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1185,6 +1361,16 @@ PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_real_without_fractional_part.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_structure_no_data.json
 PHP 5.5.36	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 PHP 5.5.36	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_huge_exp.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Python 2.7.10	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Python 2.7.10	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Python 2.7.10	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1211,6 +1397,16 @@ Python 2.7.10	SHOULD_HAVE_FAILED	n_number_NaN.json
 Python 2.7.10	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Python 2.7.10	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Python 2.7.10	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Python 2.7.10	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Python 3.5.2	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Python 3.5.2	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Python 3.5.2	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1236,6 +1432,16 @@ Python 3.5.2	SHOULD_HAVE_FAILED	n_number_minus_infinity.json
 Python 3.5.2	SHOULD_HAVE_FAILED	n_number_NaN.json
 Python 3.5.2	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Python 3.5.2	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Python 3.5.2	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Python simplejson 3.10	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1262,6 +1468,26 @@ Python simplejson 3.10	SHOULD_HAVE_FAILED	n_number_NaN.json
 Python simplejson 3.10	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Python simplejson 3.10	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Python simplejson 3.10	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Python simplejson 3.10	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Python ujson 1.35	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Python ujson 1.35	IMPLEMENTATION_FAIL	i_number_too_big_neg_int.json
+Python ujson 1.35	IMPLEMENTATION_FAIL	i_number_too_big_pos_int.json
+Python ujson 1.35	IMPLEMENTATION_FAIL	i_number_very_big_negative_int.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Python ujson 1.35	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1309,9 +1535,6 @@ Python ujson 1.35	SHOULD_HAVE_FAILED	n_string_lone_utf8_continuation_byte.json
 Python ujson 1.35	SHOULD_HAVE_FAILED	n_string_unescaped_newline.json
 Python ujson 1.35	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
 Python ujson 1.35	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
-Python ujson 1.35	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
-Python ujson 1.35	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
-Python ujson 1.35	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
 Python ujson 1.35	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Python ujson 1.35	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 R jsonlite	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
@@ -1342,6 +1565,16 @@ R jsonlite	SHOULD_HAVE_FAILED	n_structure_object_with_comment.json
 R jsonlite	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
 R jsonlite	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 R jsonlite	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_huge_exp.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+R jsonlite	IMPLEMENTATION_PASS	i_number_real_underflow.json
 R rjson	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 R rjson	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 R rjson	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1410,6 +1643,16 @@ R rjson	SHOULD_HAVE_FAILED	n_structure_object_with_trailing_garbage.json
 R rjson	SHOULD_HAVE_FAILED	n_structure_trailing_#.json
 R rjson	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 R rjson	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+R rjson	IMPLEMENTATION_PASS	i_number_huge_exp.json
+R rjson	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+R rjson	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+R rjson	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+R rjson	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+R rjson	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+R rjson	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+R rjson	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+R rjson	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+R rjson	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Ruby	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Ruby	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Ruby	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1448,6 +1691,16 @@ Ruby	SHOULD_HAVE_FAILED	n_structure_object_with_comment.json
 Ruby	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Ruby	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Ruby	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
+Ruby	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Ruby	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Ruby	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Ruby	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Ruby	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Ruby	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Ruby	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Ruby	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Ruby	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Ruby	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Ruby regex	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1501,6 +1754,16 @@ Ruby regex	SHOULD_HAVE_PASSED	y_string_unicode_U+2064_invisible_plus.json
 Ruby regex	SHOULD_HAVE_PASSED	y_string_unicodeEscapedBackslash.json
 Ruby regex	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Ruby regex	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Ruby regex	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1532,9 +1795,28 @@ Rust json-rust	CRASH	n_structure_100000_opening_arrays.json
 Rust json-rust	CRASH	n_structure_open_array_object.json
 Rust json-rust	CRASH	n_structure_unicode-identifier.json
 Rust json-rust	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
-Rust json-rust	CRASH	y_number_huge_exp.json
+Rust json-rust	CRASH	i_number_huge_exp.json
 Rust json-rust	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Rust json-rust	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Rust json-rust	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Rust rustc_serialize::json	CRASH	i_number_huge_exp.json
+Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_number_too_big_neg_int.json
+Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_number_too_big_pos_int.json
+Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_number_very_big_negative_int.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1557,10 +1839,6 @@ Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.jso
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_structure_UTF-8_BOM_empty_object.json
 Rust rustc_serialize::json	CRASH	n_structure_100000_opening_arrays.json
 Rust rustc_serialize::json	CRASH	n_structure_open_array_object.json
-Rust rustc_serialize::json	CRASH	y_number_huge_exp.json
-Rust rustc_serialize::json	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
-Rust rustc_serialize::json	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
-Rust rustc_serialize::json	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
 Rust rustc_serialize::json	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Rust rustc_serialize::json	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
@@ -1654,11 +1932,30 @@ Squeak JSON-tonyg	SHOULD_HAVE_FAILED	n_structure_object_with_trailing_garbage.js
 Squeak JSON-tonyg	CRASH	n_structure_single_point.json
 Squeak JSON-tonyg	SHOULD_HAVE_FAILED	n_structure_trailing_#.json
 Squeak JSON-tonyg	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
-Squeak JSON-tonyg	TIMEOUT	y_number_huge_exp.json
-Squeak JSON-tonyg	TIMEOUT	y_number_real_underflow.json
+Squeak JSON-tonyg	TIMEOUT	i_number_huge_exp.json
+Squeak JSON-tonyg	TIMEOUT	i_number_real_underflow.json
 Squeak JSON-tonyg	CRASH	y_string_nonCharacterInUTF-8_U+10FFFF.json
 Squeak JSON-tonyg	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Squeak JSON-tonyg	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_number_double_huge_neg_exp.json
+Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_number_huge_exp.json
+Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
+Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_number_pos_double_huge_exp.json
+Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_number_real_pos_overflow.json
+Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_number_real_underflow.json
+Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1682,12 +1979,6 @@ Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_structure_UTF-8_BOM_empty_ob
 Swift Apple JSONSerialization	SHOULD_HAVE_FAILED	n_array_extra_comma.json
 Swift Apple JSONSerialization	SHOULD_HAVE_FAILED	n_array_number_and_comma.json
 Swift Apple JSONSerialization	SHOULD_HAVE_FAILED	n_object_trailing_comma.json
-Swift Apple JSONSerialization	SHOULD_HAVE_PASSED	y_number_double_huge_neg_exp.json
-Swift Apple JSONSerialization	SHOULD_HAVE_PASSED	y_number_huge_exp.json
-Swift Apple JSONSerialization	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
-Swift Apple JSONSerialization	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
-Swift Apple JSONSerialization	SHOULD_HAVE_PASSED	y_number_real_pos_overflow.json
-Swift Apple JSONSerialization	SHOULD_HAVE_PASSED	y_number_real_underflow.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1721,6 +2012,16 @@ Swift Freddy 2.1.0	SHOULD_HAVE_PASSED	y_number_0e+1.json
 Swift Freddy 2.1.0	SHOULD_HAVE_PASSED	y_number_0e1.json
 Swift Freddy 2.1.0	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Swift Freddy 2.1.0	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1749,6 +2050,16 @@ Swift Freddy 20160830	SHOULD_HAVE_PASSED	y_number_0e+1.json
 Swift Freddy 20160830	SHOULD_HAVE_PASSED	y_number_0e1.json
 Swift Freddy 20160830	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Swift Freddy 20160830	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift Freddy 20160830	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Swift Freddy 20161018	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Swift Freddy 20161018	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift Freddy 20161018	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1782,6 +2093,26 @@ Swift Freddy 20161018	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
 Swift Freddy 20161018	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Swift Freddy 20161018	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Swift Freddy 20161018	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift Freddy 20161018	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_FAIL	i_number_real_underflow.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
 Swift PMJSON 1.1.0	CRASH	i_object_key_lone_2nd_surrogate.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1816,14 +2147,22 @@ Swift PMJSON 1.1.0	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Swift PMJSON 1.1.0	CRASH	n_structure_100000_opening_arrays.json
 Swift PMJSON 1.1.0	CRASH	n_structure_open_array_object.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_0e+1.json
-Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_real_capital_e_neg_exp.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_real_capital_e_pos_exp.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_real_neg_exp.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_real_pos_exponent.json
-Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_number_real_underflow.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Swift PMJSON 1.1.0	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1853,6 +2192,16 @@ Swift PMJSON 1.2.0	SHOULD_HAVE_FAILED	n_string_overlong_sequence_6_bytes_null.js
 Swift PMJSON 1.2.0	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Swift PMJSON 1.2.0	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Swift PMJSON 1.2.0	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1902,6 +2251,16 @@ Swift STJSON	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
 Swift STJSON	IMPLEMENTATION_PASS	i_structure_UTF-8_BOM_empty_object.json
 Swift STJSON	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Swift STJSON	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Swift STJSON	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -2001,14 +2360,16 @@ Json.NET 9.0.1	SHOULD_HAVE_FAILED	n_structure_trailing_#.json
 Json.NET 9.0.1	SHOULD_HAVE_FAILED	n_structure_unclosed_array.json
 Json.NET 9.0.1	SHOULD_HAVE_FAILED	n_structure_UTF8_BOM_no_data.json
 Json.NET 9.0.1	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_huge_exp.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_neg_int_huge_exp.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_pos_double_huge_exp.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_real_neg_overflow.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_real_pos_overflow.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_too_big_neg_int.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_too_big_pos_int.json
-Json.NET 9.0.1	SHOULD_HAVE_PASSED	y_number_very_big_negative_int.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_huge_exp.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_pos_double_huge_exp.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_real_neg_overflow.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_real_pos_overflow.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_too_big_neg_int.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_too_big_pos_int.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_very_big_negative_int.json
+Json.NET 9.0.1	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Json.NET 9.0.1	IMPLEMENTATION_PASS	i_number_real_underflow.json
+Json.NET 9.0.1	IMPLEMENTATION_FAIL	i_number_neg_int_huge_exp.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_0.e1.json
 PHP 5.5.36	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_-2..json
@@ -2038,6 +2399,11 @@ PHP 5.5.36	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_structure_no_data.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_huge_exp.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_string_invalid_lonely_surrogate.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_string_invalid_surrogate.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+PHP 5.5.36	IMPLEMENTATION_PASS	i_number_real_underflow.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_number_0.e1.json
 PHP 5.6.28	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_number_-2..json
@@ -2067,6 +2433,18 @@ PHP 5.6.28	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_structure_no_data.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
 PHP 5.6.28	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_huge_exp.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_string_invalid_lonely_surrogate.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_string_invalid_surrogate.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+PHP 5.6.28	IMPLEMENTATION_PASS	i_number_real_underflow.json
 PHP 7.0.10	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_UTF-16_invalid_lonely_surrogate.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
@@ -2089,6 +2467,18 @@ PHP 7.0.10	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_incomplete_surrogates_escape_valid.json
 PHP 7.0.10	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_huge_exp.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_invalid_lonely_surrogate.json
+PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_invalid_surrogate.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+PHP 7.0.10	IMPLEMENTATION_PASS	i_number_real_underflow.json
 C JSON-C	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 C JSON-C	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
 C JSON-C	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -2175,6 +2565,16 @@ C JSON-C	SHOULD_HAVE_PASSED	y_structure_lonely_int.json
 C JSON-C	SHOULD_HAVE_PASSED	y_structure_lonely_negative_real.json
 C JSON-C	SHOULD_HAVE_PASSED	y_structure_lonely_null.json
 C JSON-C	SHOULD_HAVE_PASSED	y_structure_lonely_true.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_huge_exp.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+C JSON-C	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Perl JSON	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Perl JSON	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Perl JSON	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -2199,6 +2599,16 @@ Perl JSON	SHOULD_HAVE_FAILED	n_multidigit_number_then_00.json
 Perl JSON	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Perl JSON	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Perl JSON	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Perl JSON	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -2229,6 +2639,16 @@ Perl JSON::PP	SHOULD_HAVE_FAILED	n_structure_object_with_comment.json
 Perl JSON::PP	SHOULD_HAVE_FAILED	n_structure_whitespace_formfeed.json
 Perl JSON::PP	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Perl JSON::PP	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Perl JSON::PP	IMPLEMENTATION_PASS	i_number_real_underflow.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -2253,3 +2673,13 @@ Perl JSON::XS	SHOULD_HAVE_FAILED	n_multidigit_number_then_00.json
 Perl JSON::XS	SHOULD_HAVE_FAILED	n_string_UTF8_surrogate_U+D800.json
 Perl JSON::XS	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 Perl JSON::XS	SHOULD_HAVE_PASSED	y_string_utf16LE_no_BOM.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_huge_exp.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+Perl JSON::XS	IMPLEMENTATION_PASS	i_number_real_underflow.json
