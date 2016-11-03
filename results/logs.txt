@@ -10,10 +10,6 @@ Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E
 Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Bash JSON.sh 2016-08-12	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Bash JSON.sh 2016-08-12	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Bash JSON.sh 2016-08-12	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Bash JSON.sh 2016-08-12	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Bash JSON.sh 2016-08-12	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Bash JSON.sh 2016-08-12	CRASH	i_structure_500_nested_arrays.json
@@ -70,10 +66,6 @@ C JSON Checker	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 C JSON Checker	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 C JSON Checker	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 C JSON Checker	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-C JSON Checker	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C JSON Checker	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C JSON Checker	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C JSON Checker	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C JSON Checker	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C JSON Checker	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 C JSON Checker	IMPLEMENTATION_FAIL	i_structure_500_nested_arrays.json
@@ -126,10 +118,6 @@ C JSON Checker 2	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 C JSON Checker 2	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 C JSON Checker 2	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 C JSON Checker 2	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-C JSON Checker 2	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C JSON Checker 2	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C JSON Checker 2	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C JSON Checker 2	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C JSON Checker 2	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C JSON Checker 2	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 C JSON Checker 2	IMPLEMENTATION_FAIL	i_structure_500_nested_arrays.json
@@ -174,10 +162,6 @@ C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.js
 C JSON Parser by udp	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C JSON Parser by udp	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C JSON Parser by udp	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 C JSON Parser by udp	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -228,10 +212,6 @@ C cJSON	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 C cJSON	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 C cJSON	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 C cJSON	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-C cJSON	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C cJSON	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C cJSON	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C cJSON	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C cJSON	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C cJSON	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 C cJSON	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -313,10 +293,6 @@ C ccan	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 C ccan	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 C ccan	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 C ccan	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-C ccan	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C ccan	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C ccan	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C ccan	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C ccan	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C ccan	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 C ccan	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -360,10 +336,6 @@ C jansson	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 C jansson	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 C jansson	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 C jansson	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-C jansson	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C jansson	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C jansson	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C jansson	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C jansson	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C jansson	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 C jansson	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -384,10 +356,6 @@ C jsmn	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 C jsmn	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 C jsmn	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 C jsmn	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-C jsmn	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C jsmn	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C jsmn	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C jsmn	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C jsmn	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C jsmn	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 C jsmn	IMPLEMENTATION_FAIL	i_structure_500_nested_arrays.json
@@ -540,10 +508,6 @@ Go 1.7.1	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Go 1.7.1	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Go 1.7.1	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Go 1.7.1	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Go 1.7.1	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Go 1.7.1	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Go 1.7.1	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -569,10 +533,6 @@ Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Java Jackson 2.8.4	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Java Jackson 2.8.4	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -622,10 +582,6 @@ Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_inverted_surrogat
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Java com.leastfixedpoint.json 1.0	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -680,10 +636,6 @@ Java gson 2.7	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Java gson 2.7	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Java gson 2.7	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Java gson 2.7	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Java gson 2.7	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Java gson 2.7	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Java gson 2.7	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -821,10 +773,6 @@ Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Java json-simple 1.1.1	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Java json-simple 1.1.1	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -888,10 +836,6 @@ Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Java nanojson 1.0	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Java nanojson 1.0	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Java nanojson 1.0	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Java nanojson 1.0	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Java nanojson 1.0	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -925,10 +869,6 @@ JavaScript	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 JavaScript	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 JavaScript	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 JavaScript	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-JavaScript	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-JavaScript	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-JavaScript	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-JavaScript	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 JavaScript	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 JavaScript	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 JavaScript	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -964,10 +904,6 @@ Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.js
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Lua JSON 20160916.19	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Lua JSON 20160916.19	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1038,10 +974,6 @@ Lua dkjson	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Lua dkjson	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Lua dkjson	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Lua dkjson	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Lua dkjson	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Lua dkjson	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Lua dkjson	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Lua dkjson	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Lua dkjson	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Lua dkjson	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Lua dkjson	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1151,10 +1083,6 @@ Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_inverted_surrogates
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1162,6 +1090,10 @@ Obj-C Apple NSJSONSerialization	IMPLEMENTATION_PASS	i_structure_UTF-8_BOM_empty_
 Obj-C Apple NSJSONSerialization	SHOULD_HAVE_FAILED	n_array_extra_comma.json
 Obj-C Apple NSJSONSerialization	SHOULD_HAVE_FAILED	n_array_number_and_comma.json
 Obj-C Apple NSJSONSerialization	SHOULD_HAVE_FAILED	n_object_trailing_comma.json
+Obj-C JSONKit	SHOULD_HAVE_PASSED	y_string_unicode_U+10FFFE_nonchar.json
+Obj-C JSONKit	SHOULD_HAVE_PASSED	y_string_unicode_U+1FFFE_nonchar.json
+Obj-C JSONKit	SHOULD_HAVE_PASSED	y_string_unicode_U+FDD0_nonchar.json
+Obj-C JSONKit	SHOULD_HAVE_PASSED	y_string_unicode_U+FFFE_nonchar.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_1st_surrogate_but_2nd_missing.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
@@ -1174,10 +1106,6 @@ Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_unicode_U+10FFFE_nonchar.json
-Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_unicode_U+1FFFE_nonchar.json
-Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_unicode_U+FDD0_nonchar.json
-Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_unicode_U+FFFE_nonchar.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Obj-C JSONKit	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Obj-C JSONKit	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1223,10 +1151,6 @@ Obj-C SBJSON 4.0.3	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Obj-C SBJSON 4.0.3	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Obj-C SBJSON 4.0.3	CRASH	i_string_not_in_unicode_range.json
 Obj-C SBJSON 4.0.3	CRASH	i_string_truncated-utf-8.json
-Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Obj-C SBJSON 4.0.3	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Obj-C SBJSON 4.0.3	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Obj-C SBJSON 4.0.3	CRASH	i_string_UTF-8_invalid_sequence.json
 Obj-C SBJSON 4.0.3	IMPLEMENTATION_FAIL	i_structure_500_nested_arrays.json
@@ -1285,10 +1209,6 @@ Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Obj-C TouchJSON	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Obj-C TouchJSON	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Obj-C TouchJSON	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Obj-C TouchJSON	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Obj-C TouchJSON	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Obj-C TouchJSON	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Obj-C TouchJSON	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1344,10 +1264,6 @@ PHP 5.5.36	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1383,10 +1299,6 @@ Python 2.7.10	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Python 2.7.10	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Python 2.7.10	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Python 2.7.10	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Python 2.7.10	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Python 2.7.10	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Python 2.7.10	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Python 2.7.10	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Python 2.7.10	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Python 2.7.10	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Python 2.7.10	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1419,10 +1331,6 @@ Python 3.5.2	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Python 3.5.2	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Python 3.5.2	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Python 3.5.2	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Python 3.5.2	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Python 3.5.2	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Python 3.5.2	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Python 3.5.2	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Python 3.5.2	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Python 3.5.2	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Python 3.5.2	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1454,10 +1362,6 @@ Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.
 Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Python simplejson 3.10	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Python simplejson 3.10	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Python simplejson 3.10	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1500,10 +1404,6 @@ Python ujson 1.35	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Python ujson 1.35	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Python ujson 1.35	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Python ujson 1.35	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Python ujson 1.35	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Python ujson 1.35	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Python ujson 1.35	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Python ujson 1.35	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Python ujson 1.35	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1549,10 +1449,6 @@ R jsonlite	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 R jsonlite	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 R jsonlite	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 R jsonlite	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-R jsonlite	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-R jsonlite	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-R jsonlite	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-R jsonlite	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 R jsonlite	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 R jsonlite	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 R jsonlite	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1587,10 +1483,6 @@ R rjson	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 R rjson	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 R rjson	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 R rjson	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-R rjson	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-R rjson	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-R rjson	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-R rjson	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 R rjson	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 R rjson	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 R rjson	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1665,10 +1557,6 @@ Ruby	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Ruby	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Ruby	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Ruby	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Ruby	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Ruby	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Ruby	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Ruby	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Ruby	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Ruby	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Ruby	IMPLEMENTATION_FAIL	i_structure_500_nested_arrays.json
@@ -1713,10 +1601,10 @@ Ruby regex	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Ruby regex	IMPLEMENTATION_FAIL	i_string_unicode_U+10FFFE_nonchar.json
-Ruby regex	IMPLEMENTATION_FAIL	i_string_unicode_U+1FFFE_nonchar.json
-Ruby regex	IMPLEMENTATION_FAIL	i_string_unicode_U+FDD0_nonchar.json
-Ruby regex	IMPLEMENTATION_FAIL	i_string_unicode_U+FFFE_nonchar.json
+Ruby regex	SHOULD_HAVE_PASSED	y_string_unicode_U+10FFFE_nonchar.json
+Ruby regex	SHOULD_HAVE_PASSED	y_string_unicode_U+1FFFE_nonchar.json
+Ruby regex	SHOULD_HAVE_PASSED	y_string_unicode_U+FDD0_nonchar.json
+Ruby regex	SHOULD_HAVE_PASSED	y_string_unicode_U+FFFE_nonchar.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Ruby regex	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Ruby regex	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1776,10 +1664,6 @@ Rust json-rust	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Rust json-rust	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Rust json-rust	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Rust json-rust	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Rust json-rust	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Rust json-rust	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Rust json-rust	CRASH	i_structure_500_nested_arrays.json
@@ -1829,10 +1713,6 @@ Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Rust rustc_serialize::json	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Rust rustc_serialize::json	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1853,10 +1733,6 @@ Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Squeak JSON-tonyg	CRASH	i_string_not_in_unicode_range.json
 Squeak JSON-tonyg	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Squeak JSON-tonyg	CRASH	i_string_UTF-16LE_with_BOM.json
 Squeak JSON-tonyg	CRASH	i_string_UTF-8_invalid_sequence.json
 Squeak JSON-tonyg	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1968,10 +1844,6 @@ Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Swift Apple JSONSerialization	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Swift Apple JSONSerialization	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -1991,10 +1863,6 @@ Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Swift Freddy 2.1.0	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Swift Freddy 2.1.0	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2034,10 +1902,6 @@ Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.j
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Swift Freddy 20160830	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift Freddy 20160830	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift Freddy 20160830	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift Freddy 20160830	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Swift Freddy 20160830	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Swift Freddy 20160830	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2072,10 +1936,6 @@ Swift Freddy 20161018	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.j
 Swift Freddy 20161018	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift Freddy 20161018	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Swift Freddy 20161018	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Swift Freddy 20161018	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2125,10 +1985,6 @@ Swift PMJSON 1.1.0	CRASH	i_string_inverted_surrogates_U+1D11E.json
 Swift PMJSON 1.1.0	CRASH	i_string_lone_second_surrogate.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Swift PMJSON 1.1.0	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2175,10 +2031,6 @@ Swift PMJSON 1.2.0	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Swift PMJSON 1.2.0	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2214,10 +2066,6 @@ Swift PMJSON 1.2.1	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Swift PMJSON 1.2.1	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2241,10 +2089,6 @@ Swift STJSON	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Swift STJSON	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Swift STJSON	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Swift STJSON	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Swift STJSON	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Swift STJSON	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Swift STJSON	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Swift STJSON	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Swift STJSON	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Swift STJSON	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Swift STJSON	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2273,10 +2117,6 @@ Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_UTF-16LE_with_BOM.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 Json.NET 9.0.1	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2385,19 +2225,15 @@ PHP 5.5.36	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_pair.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_2.e-3.json
 PHP 5.5.36	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_real_without_fractional_part.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_2.e3.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_number_2.e+3.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_UTF-16_invalid_surrogate.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
 PHP 5.5.36	SHOULD_HAVE_FAILED	n_structure_no_data.json
-PHP 5.5.36	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
 PHP 5.5.36	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_number_huge_exp.json
 PHP 5.5.36	IMPLEMENTATION_PASS	i_string_invalid_lonely_surrogate.json
@@ -2419,19 +2255,15 @@ PHP 5.6.28	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_pair.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_number_2.e-3.json
 PHP 5.6.28	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_number_real_without_fractional_part.json
-PHP 5.6.28	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
-PHP 5.6.28	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_number_2.e3.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_number_2.e+3.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_string_UTF-16_invalid_surrogate.json
-PHP 5.6.28	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
 PHP 5.6.28	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
 PHP 5.6.28	SHOULD_HAVE_FAILED	n_structure_no_data.json
-PHP 5.6.28	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
 PHP 5.6.28	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_number_huge_exp.json
 PHP 5.6.28	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
@@ -2456,16 +2288,12 @@ PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_structure_UTF-8_BOM_empty_object.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_incomplete_surrogate_pair.json
 PHP 7.0.10	SHOULD_HAVE_PASSED	y_string_utf16BE_no_BOM.json
-PHP 7.0.10	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 PHP 7.0.10	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
-PHP 7.0.10	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_1st_valid_surrogate_2nd_invalid.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_UTF-16_invalid_surrogate.json
-PHP 7.0.10	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_object_key_lone_2nd_surrogate.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_incomplete_surrogates_escape_valid.json
-PHP 7.0.10	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
 PHP 7.0.10	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 PHP 7.0.10	IMPLEMENTATION_PASS	i_number_huge_exp.json
 PHP 7.0.10	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
@@ -2491,10 +2319,6 @@ C JSON-C	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 C JSON-C	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 C JSON-C	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 C JSON-C	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
-C JSON-C	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-C JSON-C	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-C JSON-C	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-C JSON-C	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 C JSON-C	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 C JSON-C	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
 C JSON-C	IMPLEMENTATION_FAIL	i_structure_500_nested_arrays.json
@@ -2587,10 +2411,6 @@ Perl JSON	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Perl JSON	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Perl JSON	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Perl JSON	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Perl JSON	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Perl JSON	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Perl JSON	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Perl JSON	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Perl JSON	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Perl JSON	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Perl JSON	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2621,10 +2441,6 @@ Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_not_in_unicode_range.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Perl JSON::PP	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Perl JSON::PP	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Perl JSON::PP	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Perl JSON::PP	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Perl JSON::PP	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Perl JSON::PP	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
@@ -2661,10 +2477,6 @@ Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_inverted_surrogates_U+1D11E.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_lone_second_surrogate.json
 Perl JSON::XS	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Perl JSON::XS	IMPLEMENTATION_PASS	i_string_unicode_U+10FFFE_nonchar.json
-Perl JSON::XS	IMPLEMENTATION_PASS	i_string_unicode_U+1FFFE_nonchar.json
-Perl JSON::XS	IMPLEMENTATION_PASS	i_string_unicode_U+FDD0_nonchar.json
-Perl JSON::XS	IMPLEMENTATION_PASS	i_string_unicode_U+FFFE_nonchar.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
 Perl JSON::XS	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
 Perl JSON::XS	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
