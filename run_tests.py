@@ -51,7 +51,7 @@ programs = {
            "url":"https://github.com/TouchCode/TouchJSON",
            "commands":[os.path.join(PARSERS_DIR, "test_TouchJSON/bin/test_TouchJSON")]
        },
-   "Obj-C SBJSON 4.0.3":
+   "Obj-C SBJSON 4.0.4":
        {
            "url":"https://github.com/stig/json-framework",
            "commands":[os.path.join(PARSERS_DIR, "test_sbjson/bin/test_sbjson")]
