@@ -256,6 +256,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_simple_json_1_1_1/TestJSONParsing.jar")]
        },
+   "Java org.json 2016-08-15":
+       {
+           "url":"https://github.com/stleary/JSON-java",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_org_json_2016_08/TestJSONParsing.jar")]
+       },
    "Java gson 2.7":
        {
            "url":"",
