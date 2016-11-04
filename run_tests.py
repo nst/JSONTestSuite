@@ -51,10 +51,15 @@ programs = {
            "url":"https://github.com/TouchCode/TouchJSON",
            "commands":[os.path.join(PARSERS_DIR, "test_TouchJSON/bin/test_TouchJSON")]
        },
+   "Obj-C SBJSON 4.0.3":
+       {
+           "url":"https://github.com/stig/json-framework",
+           "commands":[os.path.join(PARSERS_DIR, "test_SBJSON_4_0_3/bin/test_sbjson")]
+       },
    "Obj-C SBJSON 4.0.4":
        {
            "url":"https://github.com/stig/json-framework",
-           "commands":[os.path.join(PARSERS_DIR, "test_sbjson/bin/test_sbjson")]
+           "commands":[os.path.join(PARSERS_DIR, "test_SBJSON_4_0_4/bin/test_sbjson")]
        },
    "Go 1.7.1":
        {
