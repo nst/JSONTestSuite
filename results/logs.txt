@@ -603,8 +603,8 @@ C jsmn	SHOULD_HAVE_FAILED	n_string_single_string_no_double_quotes.json
 C jsmn	SHOULD_HAVE_FAILED	n_string_unescaped_newline.json
 C jsmn	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
 C jsmn	SHOULD_HAVE_FAILED	n_string_with_trailing_garbage.json
-C jsmn	SHOULD_HAVE_FAILED	n_structure_<.>.json
-C jsmn	SHOULD_HAVE_FAILED	n_structure_<null>.json
+C jsmn	SHOULD_HAVE_FAILED	n_structure_angle_bracket_..json
+C jsmn	SHOULD_HAVE_FAILED	n_structure_angle_bracket_null.json
 C jsmn	SHOULD_HAVE_FAILED	n_structure_array_trailing_garbage.json
 C jsmn	SHOULD_HAVE_FAILED	n_structure_capitalized_True.json
 C jsmn	SHOULD_HAVE_FAILED	n_structure_double_array.json
@@ -866,8 +866,8 @@ Java gson 2.7	SHOULD_HAVE_FAILED	n_string_single_string_no_double_quotes.json
 Java gson 2.7	SHOULD_HAVE_FAILED	n_string_unescaped_crtl_char.json
 Java gson 2.7	SHOULD_HAVE_FAILED	n_string_unescaped_newline.json
 Java gson 2.7	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
-Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_<.>.json
-Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_<null>.json
+Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_angle_bracket_..json
+Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_angle_bracket_null.json
 Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_ascii-unicode-identifier.json
 Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_capitalized_True.json
 Java gson 2.7	SHOULD_HAVE_FAILED	n_structure_lone-invalid-utf-8.json
@@ -936,7 +936,7 @@ Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_object_pi_in_key_and_trailing_comma.
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_object_several_trailing_commas.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_object_trailing_comma.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_object_two_commas_in_a_row.json
-Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u.json
+Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape_u.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u1.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u1x.json
 Java json-simple 1.1.1	SHOULD_HAVE_FAILED	n_string_backslash_00.json
@@ -1149,7 +1149,7 @@ Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_object_with_trailing_garbage.json
 Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_string_accentuated_char_no_quotes.json
 Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_string_single_quote.json
 Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
-Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_structure_<null>.json
+Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_structure_angle_bracket_null.json
 Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_structure_array_trailing_garbage.json
 Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_structure_array_with_extra_array_close.json
 Java org.json 2016-08-15	SHOULD_HAVE_FAILED	n_structure_capitalized_True.json
@@ -1249,7 +1249,7 @@ Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_object_trailing_comment_open.json
 Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_object_trailing_comment_slash_open.json
 Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_object_trailing_comment_slash_open_incomplete.json
 Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_object_with_trailing_garbage.json
-Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u.json
+Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape_u.json
 Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u1.json
 Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u1x.json
 Lua JSON 20160916.19	SHOULD_HAVE_FAILED	n_string_backslash_00.json
@@ -1347,7 +1347,7 @@ Lua dkjson	SHOULD_HAVE_FAILED	n_object_trailing_comment_slash_open.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_object_trailing_comment_slash_open_incomplete.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_object_with_single_string.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_object_with_trailing_garbage.json
-Lua dkjson	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u.json
+Lua dkjson	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape_u.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u1.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_string_1_surrogate_then_escape u1x.json
 Lua dkjson	SHOULD_HAVE_FAILED	n_string_backslash_00.json
