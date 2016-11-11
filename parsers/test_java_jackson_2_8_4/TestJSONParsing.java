@@ -13,11 +13,11 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 public class TestJSONParsing {
     
-    public static boolean isValidJSON(String s) {
+    public static boolean isValidJSON(byte[] bytes) {
         try {        
             JsonFactory factory = new JsonFactory();
             ObjectMapper mapper = new ObjectMapper(factory);
-            JsonNode rootNode = mapper.readTree(s);  
+            JsonNode rootNode = mapper.readTree(bytes);
             return rootNode != null;
         } catch (Exception e) {
             System.out.println(e);
@@ -33,8 +33,8 @@ public class TestJSONParsing {
         }
         
         try {
-            String s = new String(Files.readAllBytes(Paths.get(args[0])));
-            if(isValidJSON(s)) {
+            byte[] bytes = Files.readAllBytes(Paths.get(args[0]));
+            if(isValidJSON(bytes)) {
                 System.out.println("valid");
                 System.exit(0);            
             }
