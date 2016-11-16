@@ -291,6 +291,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_nanojson_1_1/TestJSONParsing.jar")]
        },
+    "Java Actson 1.2.0":
+       {
+           "url":"https://github.com/michel-kraemer/actson",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_actson_1_2_0/TestJSONParsing.jar")]
+       },
    "Haskell Aeson 0.11.2.1":
        {
            "url":"https://github.com/bos/aeson",
