@@ -346,6 +346,11 @@ programs = {
            "url":"http://nim-lang.org",
             "commands":[ os.path.join( PARSERS_DIR, "test_nim/test_json") ]
         },
+    "Postgres":
+        {
+            "url":"",
+            "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_postgres/test_postgres.py")]
+        },
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
