@@ -341,11 +341,16 @@ programs = {
              "url":"https://github.com/devinus/poison",
              "commands":[ os.path.join( PARSERS_DIR, "test_elixir_poison/test_elixir_poison") ]
          },
-    "Nim":
-        {
-           "url":"http://nim-lang.org",
-            "commands":[ os.path.join( PARSERS_DIR, "test_nim/test_json") ]
-        },
+   "Nim":
+         {
+             "url":"http://nim-lang.org",
+             "commands":[ os.path.join( PARSERS_DIR, "test_nim/test_json") ]
+         },
+   "C++ RapidJSON":
+         {
+             "url":"https://github.com/miloyip/rapidjson",
+             "commands":[os.path.join(PARSERS_DIR, "test_rapidjson/rapidjson")]
+         },
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
