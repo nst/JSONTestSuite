@@ -76,6 +76,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_fpc/test_json")]
        },
+   "Xidel Internet Tools":
+       {
+           "url":"http://www.videlibri.de/xidel.html",
+           "commands":["/usr/bin/env", "xidel", "--input-format=json-strict", "-e=."]
+       },
    "Lua JSON 20160916.19":
        {
            "url":"http://regex.info/blog/lua/json",
