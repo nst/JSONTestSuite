@@ -61,6 +61,11 @@ programs = {
            "url":"https://github.com/stig/json-framework",
            "commands":[os.path.join(PARSERS_DIR, "test_SBJSON_4_0_4/bin/test_sbjson")]
        },
+   "Obj-C SBJson 5.0.0":
+       {
+           "url":"https://github.com/stig/json-framework",
+           "commands":[os.path.join(PARSERS_DIR, "test_SBJson_5_0_0/bin/test_sbjson")]
+       },
    "Go 1.7.1":
        {
            "url":"",
