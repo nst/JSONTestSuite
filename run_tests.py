@@ -176,6 +176,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_Freddy_20161018/bin/test_Freddy")]
        },
+   "Swift Freddy 20170118":
+       {
+           "url":"",
+           "commands":[os.path.join(PARSERS_DIR, "test_Freddy_20170118/bin/test_Freddy")]
+       },
    "Swift PMJSON 1.1.0":
        {
            "url":"https://github.com/postmates/PMJSON",
