@@ -136,6 +136,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/env", "python3.5", os.path.join(PARSERS_DIR, "test_json.py")]
        },
+   "Python cjson 1.10": # pip install cjson
+       {
+           "url":"https://pypi.python.org/pypi/python-cjson",
+           "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_cjson.py")]
+       },
    "Python ujson 1.35": # pip install ujson
        {
            "url":"https://pypi.python.org/pypi/ujson",
