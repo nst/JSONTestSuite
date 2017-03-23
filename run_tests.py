@@ -216,6 +216,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test-AppleJSONSerialization/bin/test-AppleJSONSerialization")]
        },
+   "C pdjson":
+       {
+           "url":"https://github.com/skeeto/pdjson",
+           "commands":[os.path.join(PARSERS_DIR, "test_pdjson/bin/test_pdjson")]
+       },
    "C jsmn":
        {
            "url":"https://github.com/zserge/jsmn",
