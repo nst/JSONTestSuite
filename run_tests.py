@@ -221,7 +221,7 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test-AppleJSONSerialization/bin/test-AppleJSONSerialization")]
        },
-   "C pdjson":
+   "C pdjson 20170325":
        {
            "url":"https://github.com/skeeto/pdjson",
            "commands":[os.path.join(PARSERS_DIR, "test_pdjson/bin/test_pdjson")]
