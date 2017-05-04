@@ -18,7 +18,7 @@ typedef enum testStatus {ERROR, PASS, FAIL} TestStatus;
 
 /* Parse text to JSON, then render back to text, and print! */
 TestStatus parseData(char *data, int printParsingResults) {
-    cJSON *json=cJSON_Parse(data);
+    cJSON *json=cJSON_ParseWithOpts(data, NULL, 1);
     if (!json) {
 //        if (printParsingResults) {
 //            printf("Error before: [%s]\n",cJSON_GetErrorPtr());
@@ -28,6 +28,9 @@ TestStatus parseData(char *data, int printParsingResults) {
 
     char *out=cJSON_Print(json);
     cJSON_Delete(json);
+    if (!out) {
+        return FAIL;
+    }
     if (printParsingResults) {
         printf("--  in: %s\n", data);
         printf("-- out: %s\n", out);
@@ -38,7 +41,6 @@ TestStatus parseData(char *data, int printParsingResults) {
 
 /* Read a file, parse, render back, etc. */
 TestStatus testFile(const char *filename, int printParsingResults) {
-    
     FILE *f=fopen(filename,"rb");
     if(f == NULL) { return ERROR; };
     fseek(f,0,SEEK_END);
@@ -54,13 +56,12 @@ TestStatus testFile(const char *filename, int printParsingResults) {
 }
 
 int main(int argc, const char * argv[]) {
-    
     const char* path = argv[1];
-    
+
     int printParsingResults = 0;
-    
+
     int result = testFile(path, printParsingResults);
-    
+
     if (result == PASS) {
         return 0;
     } else {
