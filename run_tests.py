@@ -376,6 +376,11 @@ programs = {
              "url":"https://github.com/miloyip/rapidjson",
              "commands":[os.path.join(PARSERS_DIR, "test_rapidjson/rapidjson")]
          },
+   "Swift JSON 20170522":
+       {
+           "url":"https://github.com/owensd/json-swift",
+           "commands":[os.path.join(PARSERS_DIR, "test_json_swift_20170522/bin/json_swift")]
+       }
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
