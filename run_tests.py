@@ -266,6 +266,11 @@ programs = {
            "url":"https://github.com/udp/json-parser",
            "commands":[os.path.join(PARSERS_DIR, "test_json-parser/bin/test_json-parser")]
        },
+   "D ASDF Parser":
+       {
+           "url":"https://github.com/tamediadigital/asdf",
+           "commands":[os.path.join(PARSERS_DIR, "test_json-asdf/test_json-asdf")]
+       },
    "Rust json-rust":
        {
            "url":"https://github.com/maciejhirsz/json-rust",

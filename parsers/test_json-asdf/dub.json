@@ -1,0 +1,12 @@
+{
+	"name": "test_json-asdf",
+	"authors": [
+		"Iaroshenko Ilia"
+	],
+	"dependencies": {
+		"asdf": "~>0.1.1"
+	},
+	"description": "ASDF Parser tests",
+	"copyright": "Copyright © 2017, Tamedia Digital",
+	"license": "BSL-1.0"
+}
