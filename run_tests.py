@@ -151,6 +151,21 @@ programs = {
            "url":"https://pypi.python.org/pypi/simplejson",
            "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_simplejson.py")]
        },
+   "Python demjson 2.2.4": # pip install demjson
+       {
+           "url":"https://pypi.python.org/pypi/demjson",
+           "commands":["/usr/bin/python", os.path.join(PARSERS_DIR, "test_demjson.py")]
+       },
+   "Python demjson 2.2.4 (py3)": # pip install demjson
+       {
+           "url":"https://pypi.python.org/pypi/demjson",
+           "commands":["/usr/bin/env", "python3.5", os.path.join(PARSERS_DIR, "test_demjson.py")]
+       },
+   "Python demjson 2.2.4 (jsonlint)": # pip install demjson
+       {
+           "url":"https://pypi.python.org/pypi/demjson",
+           "commands":["/usr/bin/env", "jsonlint", "--quiet", "--strict", "--allow=non-portable,duplicate-keys,zero-byte"]
+       },
    "Perl Cpanel::JSON::XS":
        {
            "url":"http://search.cpan.org/dist/Cpanel-JSON-XS/",
