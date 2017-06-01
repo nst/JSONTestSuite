@@ -171,6 +171,11 @@ programs = {
            "url":"http://search.cpan.org/dist/JSON-XS/XS.pm",
            "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_xs.pl")]
        },
+   "Perl MarpaX::ESLIF::ECMA404":
+       {
+           "url":"http://metacpan.org/pod/MarpaX::ESLIF::ECMA404",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_marpax_eslif_ecma404.pl")]
+       },
    "PHP 5.5.36":
        {
            "url":"",
