@@ -16,9 +16,12 @@
 #include <string.h>
 #include "document.h"
 
+// RapidJSON does crash when parsing many nested array (stack overflow)
+// a flag can prevent this, but is not the default
+// https://github.com/miloyip/rapidjson/issues/1027
+
 typedef enum testStatus {ERROR, PASS, FAIL} TestStatus;
 
-/* Parse text to JSON, then render back to text, and print! */
 TestStatus parseData(char *data, int printParsingResults) {
     rapidjson::Document document;
     if (document.Parse(data).HasParseError()) {
@@ -27,9 +30,7 @@ TestStatus parseData(char *data, int printParsingResults) {
     return PASS;
 }
 
-/* Read a file, parse, render back, etc. */
 TestStatus testFile(const char *filename, int printParsingResults) {
-    
     FILE *f=fopen(filename,"rb");
     if(f == NULL) { return ERROR; };
     fseek(f,0,SEEK_END);
