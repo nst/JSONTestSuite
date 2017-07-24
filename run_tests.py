@@ -291,11 +291,16 @@ programs = {
            "url":"https://github.com/udp/json-parser",
            "commands":[os.path.join(PARSERS_DIR, "test_json-parser/bin/test_json-parser")]
        },
+   "C++ nlohmann JSON 20170724":
+       {
+           "url":"https://github.com/nlohmann/json/",
+           "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20170724/bin/test_nlohmann_json")]
+       },
    "C++ RapidJSON 20170724":
        {
            "url":"https://github.com/miloyip/rapidjson",
            "commands":[os.path.join(PARSERS_DIR, "test_rapidjson_20170724/bin/test_rapidjson")]
-       },
+       },       
    "Rust json-rust":
        {
            "url":"https://github.com/maciejhirsz/json-rust",
