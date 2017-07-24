@@ -266,7 +266,7 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_jsonChecker2/bin/jsonChecker2")]
        },
-   "C sajson 20170724":
+   "C++ sajson 20170724":
        {
            "url":"https://github.com/chadaustin/sajson",
            "commands":[os.path.join(PARSERS_DIR, "test_sajson_20170724/bin/test_sajson")]
@@ -290,6 +290,11 @@ programs = {
        {
            "url":"https://github.com/udp/json-parser",
            "commands":[os.path.join(PARSERS_DIR, "test_json-parser/bin/test_json-parser")]
+       },
+   "C++ RapidJSON 20170724":
+       {
+           "url":"https://github.com/miloyip/rapidjson",
+           "commands":[os.path.join(PARSERS_DIR, "test_rapidjson_20170724/bin/test_rapidjson")]
        },
    "Rust json-rust":
        {
@@ -395,11 +400,6 @@ programs = {
          {
              "url":"http://nim-lang.org",
              "commands":[ os.path.join( PARSERS_DIR, "test_nim/test_json") ]
-         },
-   "C++ RapidJSON":
-         {
-             "url":"https://github.com/miloyip/rapidjson",
-             "commands":[os.path.join(PARSERS_DIR, "test_rapidjson/rapidjson")]
          },
    "Swift JSON 20170522":
        {
@@ -831,7 +831,7 @@ if __name__ == '__main__':
             sys.exit(-1)
     """
     #restrict_to_program = ["Python 2.7.10", "Python 3.5.2"]
-
+    
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('restrict_to_path', nargs='?', type=str, default=None)
