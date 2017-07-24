@@ -266,6 +266,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_jsonChecker2/bin/jsonChecker2")]
        },
+   "C sajson 20170724":
+       {
+           "url":"https://github.com/chadaustin/sajson",
+           "commands":[os.path.join(PARSERS_DIR, "test_sajson_20170724/bin/test_sajson")]
+       },
    "C ccan":
        {
            "url":"",
@@ -831,7 +836,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('restrict_to_path', nargs='?', type=str, default=None)
     parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
-
+        
     args = parser.parse_args()
     run_tests(args.restrict_to_path, args.restrict_to_program)
 
