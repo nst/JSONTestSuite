@@ -266,6 +266,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_jsonChecker2/bin/jsonChecker2")]
        },
+   "C JSON Checker 20161111":
+       {
+           "url":"https://github.com/douglascrockford/JSON-c",
+           "commands":[os.path.join(PARSERS_DIR, "test_jsonChecker20161111/bin/jsonChecker20161111")]
+       },       
    "C++ sajson 20170724":
        {
            "url":"https://github.com/chadaustin/sajson",
