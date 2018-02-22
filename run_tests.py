@@ -281,10 +281,15 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_ccan_json/bin/test_ccan")]
        },
-   "C cJSON":
+   "C cJSON 20160806":
        {
            "url":"https://github.com/DaveGamble/cJSON",
-           "commands":[os.path.join(PARSERS_DIR, "test_cJSON/bin/test-cJSON")]
+           "commands":[os.path.join(PARSERS_DIR, "test_cJSON_20160806/bin/test_cJSON")]
+       },
+   "C cJSON 1.7.3":
+       {
+           "url":"https://github.com/DaveGamble/cJSON",
+           "commands":[os.path.join(PARSERS_DIR, "test_cJSON_1_7_3/bin/test_cJSON")]
        },
    "C JSON-C":
        {
@@ -840,7 +845,6 @@ if __name__ == '__main__':
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
     """
-    #restrict_to_program = ["Python 2.7.10", "Python 3.5.2"]
     
     import argparse
     parser = argparse.ArgumentParser()
@@ -848,7 +852,10 @@ if __name__ == '__main__':
     parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
         
     args = parser.parse_args()
-    run_tests(args.restrict_to_path, args.restrict_to_program)
+
+    #args.restrict_to_program = ["C cJSON 20160806", "C cJSON 1.7.3"]
+    
+    #run_tests(args.restrict_to_path, args.restrict_to_program)
 
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)
