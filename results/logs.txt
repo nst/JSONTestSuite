@@ -107,7 +107,7 @@ C JSON Checker	SHOULD_HAVE_FAILED	n_number_real_without_fractional_part.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_number_0e+1.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_number_0e1.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+10FFFF.json
-C JSON Checker	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+1FFFF.json
+C JSON Checker	SHOULD_HAVE_PASSED	y_string_reservedCharacterInUTF-8_U+1BFFF.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+FFFF.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_string_pi.json
 C JSON Checker	SHOULD_HAVE_PASSED	y_string_space.json
@@ -158,7 +158,7 @@ C JSON Checker 2	IMPLEMENTATION_PASS	i_string_invalid_surrogate.json
 C JSON Checker 2	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
 C JSON Checker 2	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+10FFFF.json
-C JSON Checker 2	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+1FFFF.json
+C JSON Checker 2	SHOULD_HAVE_PASSED	y_string_reservedCharacterInUTF-8_U+1BFFF.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+FFFF.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_string_pi.json
 C JSON Checker 2	SHOULD_HAVE_PASSED	y_string_space.json
@@ -188,7 +188,7 @@ C JSON Checker 20161111	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_inv
 C JSON Checker 20161111	SHOULD_HAVE_PASSED	y_structure_lonely_false.json
 C JSON Checker 20161111	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
 C JSON Checker 20161111	IMPLEMENTATION_FAIL	i_string_utf16BE_no_BOM.json
-C JSON Checker 20161111	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+1FFFF.json
+C JSON Checker 20161111	SHOULD_HAVE_PASSED	y_string_reservedCharacterInUTF-8_U+1BFFF.json
 C JSON Checker 20161111	SHOULD_HAVE_PASSED	y_structure_lonely_int.json
 C JSON Checker 20161111	IMPLEMENTATION_PASS	i_number_huge_exp.json
 C JSON Checker 20161111	IMPLEMENTATION_FAIL	i_string_UTF8_surrogate_U+D800.json
@@ -2715,7 +2715,7 @@ Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_in_array_with_leading_space.js
 Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_last_surrogates_1_and_2.json
 Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_nbsp_uescaped.json
 Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+10FFFF.json
-Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+1FFFF.json
+Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_reservedCharacterInUTF-8_U+1BFFF.json
 Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+FFFF.json
 Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_null_escape.json
 Ruby Oj (compat mode)	SHOULD_HAVE_PASSED	y_string_one-byte-utf-8.json
@@ -2845,7 +2845,7 @@ Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_in_array_with_leading_space.js
 Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_last_surrogates_1_and_2.json
 Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_nbsp_uescaped.json
 Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+10FFFF.json
-Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+1FFFF.json
+Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_reservedCharacterInUTF-8_U+1BFFF.json
 Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+FFFF.json
 Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_null_escape.json
 Ruby Oj (strict mode)	SHOULD_HAVE_PASSED	y_string_one-byte-utf-8.json
@@ -2975,7 +2975,7 @@ Ruby Yajl	SHOULD_HAVE_PASSED	y_string_in_array_with_leading_space.json
 Ruby Yajl	SHOULD_HAVE_PASSED	y_string_last_surrogates_1_and_2.json
 Ruby Yajl	SHOULD_HAVE_PASSED	y_string_nbsp_uescaped.json
 Ruby Yajl	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+10FFFF.json
-Ruby Yajl	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+1FFFF.json
+Ruby Yajl	SHOULD_HAVE_PASSED	y_string_reservedCharacterInUTF-8_U+1BFFF.json
 Ruby Yajl	SHOULD_HAVE_PASSED	y_string_nonCharacterInUTF-8_U+FFFF.json
 Ruby Yajl	SHOULD_HAVE_PASSED	y_string_null_escape.json
 Ruby Yajl	SHOULD_HAVE_PASSED	y_string_one-byte-utf-8.json
