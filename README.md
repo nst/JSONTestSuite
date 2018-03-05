@@ -1,5 +1,5 @@
 # JSON Parsing Test Suite
-A comprehensive test suite for RFC 7159 compliant JSON parsers
+A comprehensive test suite for RFC 8259 compliant JSON parsers
 
 This repository was created as an appendix to the article [Parsing JSON is a Minefield 💣](http://seriot.ch/parsing_json.php).
 
