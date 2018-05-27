@@ -1,0 +1,7 @@
+*.ez
+/_build/
+/.fetch
+/deps/
+erl_crash.dump
+test_elixir_jason
+test_elixir_jason-*.tar

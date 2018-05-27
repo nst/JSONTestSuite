@@ -411,6 +411,11 @@ programs = {
              "url":"https://github.com/devinus/poison",
              "commands":[ os.path.join( PARSERS_DIR, "test_elixir_poison/test_elixir_poison") ]
          },
+   "Elixir Jason":
+         {
+             "url":"https://github.com/michalmuskala/jason",
+             "commands":[ os.path.join( PARSERS_DIR, "test_elixir_jason/test_elixir_jason") ]
+         },
    "Nim":
          {
              "url":"http://nim-lang.org",
