@@ -425,6 +425,11 @@ programs = {
        {
            "url":"https://github.com/owensd/json-swift",
            "commands":[os.path.join(PARSERS_DIR, "test_json_swift_20170522/bin/json_swift")]
+       },
+    "C++ PEGTL 20180912":
+       {
+           "url":"https://github.com/taocpp/pegtl",
+           "commands":[os.path.join(PARSERS_DIR, "test_PEGTL_20180912/bin/test_PEGTL")]
        }
 }
 
