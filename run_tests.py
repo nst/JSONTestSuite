@@ -168,28 +168,48 @@ programs = {
        },
    "Perl Cpanel::JSON::XS":
        {
-           "url":"http://search.cpan.org/dist/Cpanel-JSON-XS/",
+           "url":"https://metacpan.org/pod/Cpanel::JSON::XS",
            "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_cpanel_json_xs.pl")]
        },
-   "Perl JSON":
+   "Perl JSON::Parse":
        {
-           "url":"",
-           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json.pl")]
+           "url":"https://metacpan.org/pod/JSON::Parse",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_parse.pl")]
        },
    "Perl JSON::PP": # part of default install in perl >= v5.14
        {
-           "url":"http://search.cpan.org/dist/JSON-PP/",
+           "url":"https://metacpan.org/pod/JSON::PP",
            "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_pp.pl")]
+       },
+   "Perl JSON::SL":
+       {
+           "url":"https://metacpan.org/pod/JSON::SL",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_sl.pl")]
+       },
+   "Perl JSON::Tiny":
+       {
+           "url":"https://metacpan.org/pod/JSON::Tiny",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_tiny.pl")]
        },
    "Perl JSON::XS":
        {
-           "url":"http://search.cpan.org/dist/JSON-XS/XS.pm",
+           "url":"https://metacpan.org/pod/JSON::XS",
            "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_json_xs.pl")]
        },
    "Perl MarpaX::ESLIF::ECMA404":
        {
            "url":"http://metacpan.org/pod/MarpaX::ESLIF::ECMA404",
            "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_marpax_eslif_ecma404.pl")]
+       },
+   "Perl Mojo::JSON":
+       {
+           "url":"http://metacpan.org/pod/Mojo::JSON",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_mojo_json.pl")]
+       },
+   "Perl Pegex::JSON":
+       {
+           "url":"http://metacpan.org/pod/Pegex::JSON",
+           "commands":["/usr/bin/perl", os.path.join(PARSERS_DIR, "test_pegex_json.pl")]
        },
    "PHP 5.5.36":
        {
