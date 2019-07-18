@@ -270,7 +270,7 @@ programs = {
        {
            "url":"https://github.com/douglascrockford/JSON-c",
            "commands":[os.path.join(PARSERS_DIR, "test_jsonChecker20161111/bin/jsonChecker20161111")]
-       },       
+       },
    "C++ sajson 20170724":
        {
            "url":"https://github.com/chadaustin/sajson",
@@ -310,7 +310,7 @@ programs = {
        {
            "url":"https://github.com/miloyip/rapidjson",
            "commands":[os.path.join(PARSERS_DIR, "test_rapidjson_20170724/bin/test_rapidjson")]
-       },       
+       },
    "Rust json-rust":
        {
            "url":"https://github.com/maciejhirsz/json-rust",
@@ -850,12 +850,12 @@ if __name__ == '__main__':
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
     """
-    
+
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('restrict_to_path', nargs='?', type=str, default=None)
     parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
-        
+
     args = parser.parse_args()
 
     #args.restrict_to_program = ["C cJSON 20160806", "C cJSON 1.7.3"]
