@@ -301,10 +301,10 @@ programs = {
            "url":"https://github.com/udp/json-parser",
            "commands":[os.path.join(PARSERS_DIR, "test_json-parser/bin/test_json-parser")]
        },
-   "C++ nlohmann JSON 20170724":
+   "C++ nlohmann JSON 20190718":
        {
            "url":"https://github.com/nlohmann/json/",
-           "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20170724/bin/test_nlohmann_json")]
+           "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
        },
    "C++ RapidJSON 20170724":
        {
@@ -859,8 +859,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #args.restrict_to_program = ["C cJSON 20160806", "C cJSON 1.7.3"]
-    
-    #run_tests(args.restrict_to_path, args.restrict_to_program)
+
+    run_tests(args.restrict_to_path, args.restrict_to_program)
 
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)
