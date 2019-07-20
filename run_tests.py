@@ -425,6 +425,11 @@ programs = {
        {
            "url":"https://github.com/owensd/json-swift",
            "commands":[os.path.join(PARSERS_DIR, "test_json_swift_20170522/bin/json_swift")]
+       },
+   "C++ nlohmann JSON 20190718":
+       {
+           "url":"https://github.com/nlohmann/json",
+           "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
        }
 }
 
