@@ -14,7 +14,7 @@ using nlohmann::json;
 typedef enum testStatus {ERROR, PASS, FAIL} TestStatus;
 
 TestStatus parseData(char *data) {
-    json::basic_json o = json::parse(data);
+    json o = json::parse(data);
     return (o != NULL) ? PASS : FAIL;
 }
 
@@ -35,7 +35,7 @@ TestStatus testFile(const char *filename) {
 
 
 int main(int argc, const char * argv[]) {
-    
+
     try {
         const char* path = argv[1];
         TestStatus status = testFile(path);

@@ -270,7 +270,7 @@ programs = {
        {
            "url":"https://github.com/douglascrockford/JSON-c",
            "commands":[os.path.join(PARSERS_DIR, "test_jsonChecker20161111/bin/jsonChecker20161111")]
-       },       
+       },
    "C++ sajson 20170724":
        {
            "url":"https://github.com/chadaustin/sajson",
@@ -301,16 +301,16 @@ programs = {
            "url":"https://github.com/udp/json-parser",
            "commands":[os.path.join(PARSERS_DIR, "test_json-parser/bin/test_json-parser")]
        },
-   "C++ nlohmann JSON 20170724":
+   "C++ nlohmann JSON 20190718":
        {
            "url":"https://github.com/nlohmann/json/",
-           "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20170724/bin/test_nlohmann_json")]
+           "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
        },
    "C++ RapidJSON 20170724":
        {
            "url":"https://github.com/miloyip/rapidjson",
            "commands":[os.path.join(PARSERS_DIR, "test_rapidjson_20170724/bin/test_rapidjson")]
-       },       
+       },
    "Rust json-rust":
        {
            "url":"https://github.com/maciejhirsz/json-rust",
@@ -850,17 +850,17 @@ if __name__ == '__main__':
             print("-- file does not exist:", restrict_to_path)
             sys.exit(-1)
     """
-    
+
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('restrict_to_path', nargs='?', type=str, default=None)
     parser.add_argument('--filter', dest='restrict_to_program', type=argparse.FileType('r'), default=None)
-        
+
     args = parser.parse_args()
 
     #args.restrict_to_program = ["C cJSON 20160806", "C cJSON 1.7.3"]
-    
-    #run_tests(args.restrict_to_path, args.restrict_to_program)
+
+    run_tests(args.restrict_to_path, args.restrict_to_program)
 
     generate_report(os.path.join(BASE_DIR, "results/parsing.html"), keep_only_first_result_in_set = False)
     generate_report(os.path.join(BASE_DIR, "results/parsing_pruned.html"), keep_only_first_result_in_set = True)
