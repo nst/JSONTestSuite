@@ -351,6 +351,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_jackson_2_8_4/TestJSONParsing.jar")]
        },
+   "Scala Dijon 0.3.0":
+       {
+           "url":"",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_scala_dijon_0.3.0/target/scala-2.13/TestJSONParsing.jar")]
+       },
    "Java nanojson 1.0":
        {
            "url":"",
