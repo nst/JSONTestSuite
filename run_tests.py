@@ -351,6 +351,12 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_jackson_2_8_4/TestJSONParsing.jar")]
        },
+   "Java Mergebase Java2Json 2019.09.09":
+       {
+           "url":"https://github.com/mergebase/Java2Json",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_mergebase_json_2019_09_09/TestJSONParsing.jar")]
+       },
+
    "Java nanojson 1.0":
        {
            "url":"",
