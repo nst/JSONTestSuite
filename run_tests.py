@@ -685,7 +685,7 @@ def generate_report(report_path, keep_only_first_result_in_set = False):
 
     tests_with_same_results = f_tests_with_same_results(libs, status_for_lib_for_file)
 
-    with open(report_path, 'w') as f:
+    with open(report_path, 'w', encoding='utf-8') as f:
 
         f.write("""<!DOCTYPE html>
 
