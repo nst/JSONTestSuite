@@ -341,6 +341,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_gson_2_7/TestJSONParsing.jar")]
        },
+   "Java BFO v1":
+       {
+           "url":"https://github.com/faceless2/json",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_bfo/TestJSONParsing.jar")]
+       },
    "Java com.leastfixedpoint.json 1.0":
        {
            "url":"",
@@ -355,6 +360,11 @@ programs = {
        {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_scala_dijon_0.3.0/target/scala-2.13/TestJSONParsing.jar")]
+       },
+   "Java Mergebase Java2Json 2019.09.09":
+       {
+           "url":"https://github.com/mergebase/Java2Json",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_mergebase_json_2019_09_09/TestJSONParsing.jar")]
        },
    "Java nanojson 1.0":
        {
