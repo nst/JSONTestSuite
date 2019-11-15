@@ -341,6 +341,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_gson_2_7/TestJSONParsing.jar")]
        },
+   "Java BFO v1":
+       {
+           "url":"https://github.com/faceless2/json",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_bfo/TestJSONParsing.jar")]
+       },
    "Java com.leastfixedpoint.json 1.0":
        {
            "url":"",
