@@ -411,6 +411,11 @@ programs = {
            "url":"http://www.newtonsoft.com/json",
            "commands":["/usr/local/share/dotnet/dotnet", os.path.join(PARSERS_DIR, "test_Json.NET/bin/Release/netcoreapp1.0/publish/test_Json.NET.dll")]
        },
+   ".NET System.Text.Json 4.6.0":
+       {
+           "url":"https://docs.microsoft.com/en-us/dotnet/api/system.text.json",
+           "commands":[os.path.join(PARSERS_DIR, "test_dotnet_system_text_json/app")]
+       },
    "Elixir Json":
          {
              "url":"https://github.com/cblage/elixir-json",
