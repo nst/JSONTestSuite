@@ -391,6 +391,11 @@ programs = {
            "url":"https://github.com/mjambon/yojson",
            "commands":[os.path.join(PARSERS_DIR, "test_ocaml-yojson/testyojson")]
        },
+    "OCaml Orsetto":
+       {
+           "url":"https://bitbucket.org/jhw/orsetto",
+           "commands":[os.path.join(PARSERS_DIR, "test_ocaml_orsetto/test_orsetto_json")]
+       },
     "Qt JSON":
         {
             "url":"",

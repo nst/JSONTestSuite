@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -eu
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+cd $DIR
+if [ ! -x src/test_orsetto.native ]; then
+  ocamlbuild -package orsetto.json src/test_orsetto.native
+fi
+
+./test_orsetto.native $@
