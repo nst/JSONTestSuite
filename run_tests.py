@@ -421,11 +421,16 @@ programs = {
             "url":"",
             "commands":[os.path.join(PARSERS_DIR, "test_qt/test_qt")]
         },
+    "C ConcreteServer":
+        {
+            "url":" https://github.com/RaphaelPrevost/ConcreteServer",
+            "commands":[os.path.join(PARSERS_DIR, "test_ConcreteServer/json_checker")]
+        },
     "Squeak JSON-tonyg":
         {
             "url":"http://www.squeaksource.com/JSON.html",
             "commands":[
-                    os.path.join(PARSERS_DIR, "test_Squeak_JSON_tonyg/Squeak.app/Contents/MacOS/Squeak"),
+                    os.path.join(PARSERS_DIR, "test_Squeak_JSON_tonyg/Squeak.app/Contentstents/MacOS/Squeak"),
                     "-headless", #<--optional
                     os.path.join(PARSERS_DIR, "test_Squeak_JSON_tonyg/Squeak5.1-16549-32bit.image"),
                     "test_JSON.st"
@@ -908,7 +913,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    #args.restrict_to_program = ["C cJSON 20160806", "C cJSON 1.7.3"]
+    #args.restrict_to_program = ["C ConcreteServer"]
 
     run_tests(args.restrict_to_path, args.restrict_to_program)
 
