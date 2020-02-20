@@ -346,6 +346,11 @@ programs = {
            "url":"https://github.com/serde-rs/json",
            "commands":[os.path.join(PARSERS_DIR, "test_json-rust-serde_json/rj/target/debug/rj")]
        },
+   "Kotlin Serialization 0.14.0":
+       {
+           "url":"https://github.com/Kotlin/kotlinx.serialization",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_kotlin_serialization_0_14_0/TestJSONParsing.jar")]
+       },
    "Java json-simple 1.1.1":
        {
            "url":"",
