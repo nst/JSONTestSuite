@@ -396,6 +396,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_nanojson_1_1/TestJSONParsing.jar")]
        },
+   "Java nanojson 1.6":
+       {
+           "url":"",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_nanojson_1_6/TestJSONParsing.jar")]
+       },
     "Java Actson 1.2.0":
        {
            "url":"https://github.com/michel-kraemer/actson",
