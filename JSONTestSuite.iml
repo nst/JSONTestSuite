@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_com_leastfixedpoint_json_1_0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_actson_1_2_0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_nanojson_1_0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_nanojson_1_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_simple_json_1_1_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_jackson_2_8_4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_mergebase_json_2019_09_09" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_gson_2_7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_org_json_2016_08" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/parsers/test_java_bfo" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="test_java_simple_json_1_1_1" level="project" />
+    <orderEntry type="library" name="test_java_jackson_2_8_4" level="project" />
+    <orderEntry type="library" name="test_java_bfo" level="project" />
+    <orderEntry type="library" name="test_java_gson_2_7" level="project" />
+    <orderEntry type="library" name="test_java_nanojson_1_0" level="project" />
+    <orderEntry type="library" name="test_java_nanojson_1_1" level="project" />
+    <orderEntry type="library" name="test_java_actson_1_2_0" level="project" />
+    <orderEntry type="library" name="test_java_mergebase_json_2019_09_09" level="project" />
+    <orderEntry type="library" name="test_java_com_leastfixedpoint_json_1_0" level="project" />
+    <orderEntry type="library" name="test_java_org_json_2016_08" level="project" />
+  </component>
+</module>
