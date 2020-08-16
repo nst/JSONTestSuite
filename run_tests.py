@@ -430,7 +430,7 @@ programs = {
         {
             "url":"http://www.squeaksource.com/JSON.html",
             "commands":[
-                    os.path.join(PARSERS_DIR, "test_Squeak_JSON_tonyg/Squeak.app/Contentstents/MacOS/Squeak"),
+                    os.path.join(PARSERS_DIR, "test_Squeak_JSON_tonyg/Squeak.app/Contents/MacOS/Squeak"),
                     "-headless", #<--optional
                     os.path.join(PARSERS_DIR, "test_Squeak_JSON_tonyg/Squeak5.1-16549-32bit.image"),
                     "test_JSON.st"
