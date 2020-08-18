@@ -20,6 +20,26 @@ LOG_FILE_PATH = os.path.join(LOGS_DIR_PATH, LOG_FILENAME)
 INVALID_BINARY_FORMAT = 8
 
 programs = {
+    # "Awk JSON.awk busybox":
+    #     {
+    #         "url":"https://github.com/step-/JSON.awk",
+    #         "commands":["/bin/busybox", "awk", "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "JSON-busybox.awk")]
+    #     },
+    # "Awk JSON.awk gawk POSIX":
+    #     {
+    #         "url":"https://github.com/step-/JSON.awk",
+    #         "commands":["/usr/bin/gawk", "--posix", "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "JSON.awk")]
+    #     },
+    "Awk JSON.awk gawk":
+        {
+            "url":"https://github.com/step-/JSON.awk",
+            "commands":["/usr/bin/gawk", "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "JSON.awk")]
+        },
+    # "Awk JSON.awk mawk":
+    #     {
+    #         "url":"https://github.com/step-/JSON.awk",
+    #         "commands":["/usr/bin/mawk", "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "callbacks.awk"), "-f", os.path.join(PARSERS_DIR, "test_JSON.awk", "JSON.awk")]
+    #     },
     "Bash JSON.sh 2016-08-12":
         {
             "url":"https://github.com/dominictarr/JSON.sh",
