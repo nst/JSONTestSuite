@@ -502,6 +502,14 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
 
         url = d["url"]
         commands = d["commands"]
+        setup = d.get("setup")
+        if setup != None:
+            print("--", " ".join(setup))
+            try:
+                subprocess.call(setup)
+            except Exception as e:
+                print("-- skip", e)
+                continue
 
         for root, dirs, files in os.walk(TEST_CASES_DIR_PATH):
             json_files = (f for f in files if f.endswith(".json"))
