@@ -71,6 +71,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_go/test_json")]
        },
+    "Zig 0.8.0-dev.1354+081698156":
+       {
+           "url":"",
+           "commands":[os.path.join(PARSERS_DIR, "test_zig/test_json")]
+       },
    "Free Pascal fcl-json":
        {
            "url":"",
