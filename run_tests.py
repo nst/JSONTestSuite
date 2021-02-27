@@ -18,6 +18,7 @@ LOG_FILENAME = "logs.txt"
 LOG_FILE_PATH = os.path.join(LOGS_DIR_PATH, LOG_FILENAME)
 
 INVALID_BINARY_FORMAT = 8
+BAD_CPU_TYPE = 86
 
 programs = {
     "Bash JSON.sh 2016-08-12":
@@ -558,7 +559,7 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
                     print("-- skip non-existing", e.filename)
                     break
                 except OSError as e:
-                    if e.errno == INVALID_BINARY_FORMAT:
+                    if e.errno == INVALID_BINARY_FORMAT or e.errno == BAD_CPU_TYPE:
                         print("-- skip invalid-binary", commands[0])
                         break
                     raise e
