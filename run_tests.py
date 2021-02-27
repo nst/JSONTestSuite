@@ -442,15 +442,17 @@ programs = {
                     "test_JSON.st"
             ]
         },
-   "Json.NET 9.0.1":
+   ".NET Newtonsoft.Json 12.0.3":
        {
            "url":"http://www.newtonsoft.com/json",
-           "commands":["/usr/local/share/dotnet/dotnet", os.path.join(PARSERS_DIR, "test_Json.NET/bin/Release/netcoreapp1.0/publish/test_Json.NET.dll")]
+           "setup":["dotnet", "build", "--configuration", "Release", os.path.join(PARSERS_DIR, "test_dotnet_newtonsoft/app.csproj")],
+           "commands":["dotnet", os.path.join(PARSERS_DIR, "test_dotnet_newtonsoft/bin/Release/net5.0/app.dll")]
        },
-   ".NET System.Text.Json 4.6.0":
+   ".NET System.Text.Json 5.0.0":
        {
            "url":"https://docs.microsoft.com/en-us/dotnet/api/system.text.json",
-           "commands":[os.path.join(PARSERS_DIR, "test_dotnet_system_text_json/app")]
+           "setup":["dotnet", "build", "--configuration", "Release", os.path.join(PARSERS_DIR, "test_dotnet_system_text_json/app.csproj")],
+           "commands":["dotnet", os.path.join(PARSERS_DIR, "test_dotnet_system_text_json/bin/Release/net5.0/app.dll")]
        },
    "Elixir Json":
          {
