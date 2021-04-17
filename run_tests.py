@@ -382,6 +382,20 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_jackson_2_8_4/TestJSONParsing.jar")]
        },
+
+    "Clojure data.json 2.2.0":
+       {
+           "url":"",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_clojure_data_json_2_2_0/test_data_json.jar")]
+       },
+
+    "Clojure data.json 1.0.0":
+    {
+        "url":"",
+        "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_clojure_data_json_1_0_0/test_data_json.jar")]
+       },
+
+
    "Scala Dijon 0.3.0":
        {
            "url":"",
