@@ -21,6 +21,12 @@ INVALID_BINARY_FORMAT = 8
 BAD_CPU_TYPE = 86
 
 programs = {
+    "RubyLane":
+        {
+            "url":"https://github.com/RubyLane/rl_json",
+            "commands":[os.path.join(PARSERS_DIR, "test_rl_json/tclsh"), os.path.join(PARSERS_DIR, "test_rl_json/run_rl_json.tcl")],
+            "use_stdin":True
+        },
     "Bash JSON.sh 2016-08-12":
         {
             "url":"https://github.com/dominictarr/JSON.sh",
