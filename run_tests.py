@@ -382,6 +382,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_jackson_2_8_4/TestJSONParsing.jar")]
        },
+   "Java JsonTree 0.5":
+       {
+           "url":"",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_json_tree/TestJSONParsing.jar")]
+       },
    "Scala Dijon 0.3.0":
        {
            "url":"",
