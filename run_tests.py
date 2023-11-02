@@ -474,6 +474,11 @@ programs = {
              "url":"https://github.com/michalmuskala/jason",
              "commands":[ os.path.join( PARSERS_DIR, "test_elixir_jason/test_elixir_jason") ]
          },
+   "Erlang Euneus":
+         {
+            "url":"https://github.com/williamthome/euneus",
+            "commands":[ os.path.join( PARSERS_DIR, "test_erlang_euneus/test_erlang_euneus") ]
+         },
    "Nim":
          {
              "url":"http://nim-lang.org",
