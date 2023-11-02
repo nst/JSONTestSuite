@@ -1,0 +1,3 @@
+%{
+  "euneus": {:hex, :euneus, "0.4.0", "5d2993c190ade720f06fca41359458fc6905460eca801d3a77bc6ff4650882d5", [:rebar3], [], "hexpm", "10ebcc349babee03ab2c389e8ce2295c50276a3f640652bb6c21656fd8601a2c"},
+}
