@@ -95,7 +95,7 @@ For instance, `n_string_unescaped_tab.json` contains <CODE>["<U>09</U>"]</CODE>,
 
 Note that since several parsers don't allow scalars at the top level (`"test"`), I embed strings into arrays (`["test"]`).
 
-You'll find more that 300 tests in the [JSONTestSuite GitHub repository](https://github.com/nst/JSONTestSuite).
+You'll find more than 300 tests in the [JSONTestSuite GitHub repository](https://github.com/nst/JSONTestSuite).
 
 The test files were mostly handcrafted while reading specifications, trying to pay attention to edge cases and ambiguous parts. I also tried to reuse other test suites found on the Internet (mainly [json-test-suite](https://code.google.com/archive/p/json-test-suite/) and [JSON Checker](http://www.json.org/JSON_checker/)), but I found that most test suites did only cover basic cases.
 
@@ -339,7 +339,7 @@ Tests with implementation defined will include a plain UTF-8 BOM with no other c
 </TR>
 <TR>
     <TD class="fixedWidth">n_string_escape_x.json</TD>
-    <TD>["x00"]</TD>
+    <TD>["\x00"]</TD>
 </TR>
 </TABLE>
 
@@ -348,11 +348,11 @@ Tests with implementation defined will include a plain UTF-8 BOM with no other c
 <TABLE class="monospace">
 <TR>
     <TD class="fixedWidth">y_string_allowed_escapes.json</TD>
-    <TD>[""\/bfnrt"]</TD>
+    <TD>["\"\/\b\f\n\r\t"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">n_structure_bad_escape.json</TD>
-    <TD>["</TD>
+    <TD>[\"</TD>
 </TR>
 </TABLE>
 
@@ -365,11 +365,11 @@ The escape character can be used to represent codepoints in the Basic Multilingu
 </TR>
 <TR>
     <TD class="fixedWidth">n_string_invalid_unicode_escape.json</TD>
-    <TD>["uqqqq"]</TD>
+    <TD>["\uqqqq"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">n_string_incomplete_escaped_character.json</TD>
-    <TD>["u00A"]</TD>
+    <TD>["\u00A"]</TD>
 </TR>
 </TABLE>
 
@@ -386,27 +386,27 @@ The editors considered that the grammar should not be restricted, and that warni
 <TABLE class="monospace">
 <TR>
     <TD class="fixedWidth">y_string_accepted_surrogate_pair.json</TD>
-    <TD>["uD801udc37"]</TD>
+    <TD>["\uD801\udc37"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">n_string_incomplete_escaped_character.json</TD>
-    <TD>["u00A"]</TD>
+    <TD>["\u00A"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">i_string_incomplete_surrogates_escape_valid.json</TD>
-    <TD>["uD800uD800n"]</TD>
+    <TD>["\uD800\uD800n"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">i_string_lone_second_surrogate.json</TD>
-    <TD>["uDFAA"]</TD>
+    <TD>["\uDFAA"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">i_string_1st_valid_surrogate_2nd_invalid.json</TD>
-    <TD>["uD888u1234"]</TD>
+    <TD>["\uD888\u1234"]</TD>
 </TR>
 <TR>
     <TD class="fixedWidth">i_string_inverted_surrogates_U+1D11E.json</TD>
-    <TD>["uDd1euD834"]</TD>
+    <TD>["\uDd1e\uD834"]</TD>
 </TR>
 </TABLE>
 
