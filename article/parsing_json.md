@@ -95,7 +95,7 @@ For instance, `n_string_unescaped_tab.json` contains <CODE>["<U>09</U>"]</CODE>,
 
 Note that since several parsers don't allow scalars at the top level (`"test"`), I embed strings into arrays (`["test"]`).
 
-You'll find more that 300 tests in the [JSONTestSuite GitHub repository](https://github.com/nst/JSONTestSuite).
+You'll find more than 300 tests in the [JSONTestSuite GitHub repository](https://github.com/nst/JSONTestSuite).
 
 The test files were mostly handcrafted while reading specifications, trying to pay attention to edge cases and ambiguous parts. I also tried to reuse other test suites found on the Internet (mainly [json-test-suite](https://code.google.com/archive/p/json-test-suite/) and [JSON Checker](http://www.json.org/JSON_checker/)), but I found that most test suites did only cover basic cases.
 
