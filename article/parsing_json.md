@@ -19,6 +19,8 @@ Parsing JSON is a Minefield 💣
 
 Feel free to comment on [Hacker News (2016-10)](https://news.ycombinator.com/item?id=12796556), [Hacker News (2018-04)](https://news.ycombinator.com/item?id=16897061) or [reddit](https://www.reddit.com/r/programming/comments/59htn7/parsing_json_is_a_minefield/).
 
+_Found a typo in this article? fix it by opening a [pull request](https://github.com/nst/JSONTestSuite/pulls)._
+
 ### Session Description
 
 _JSON is the de facto standard when it comes to (un)serialising and exchanging data in web and mobile programming. But how well do you really know JSON? We'll read the specifications and write test cases together. We'll test common JSON libraries against our test cases. I'll show that JSON is not the easy, idealised format as many do believe. Indeed, I did not find two libraries that exhibit the very same behaviour. Moreover, I found that edge cases and maliciously crafted payloads can cause bugs, crashes and denial of services, mainly because JSON libraries rely on specifications that have evolved over time and that left many details loosely specified or not specified at all._
