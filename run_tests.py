@@ -518,6 +518,11 @@ programs = {
        {
            "url":"https://github.com/nlohmann/json",
            "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
+       },
+   "libfyaml":
+       {
+           "url":"https://github.com/pantoniou/libfyaml",
+           "commands":[os.path.join(PARSERS_DIR, "test_libfyaml.sh")]
        }
 }
 
