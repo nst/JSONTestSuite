@@ -75,15 +75,15 @@ Yet JSON is defined in at least seven different documents:
 
     > "Someone told the ECMA working group that the IETF had gone crazy and was going to rewrite JSON with no regard for compatibility and break the whole Internet and something had to be done urgently about this terrible situation. (...) It doesn’t address any of the gripes that were motivating the IETF revision.
 
-5. 2014 - IETF [RFC 7158](https://tools.ietf.org/html/rfc7158) makes the specification "Standard Tracks" instead of "Informational", allows scalars (anything other than arrays and objects) such as `123` and `true` at the root level as ECMA does, warns about bad practices such as duplicated keys and broken Unicode strings, without explicitely forbidding them, though.
+5. 2014 - IETF [RFC 7158](https://tools.ietf.org/html/rfc7158) makes the specification "Standard Tracks" instead of "Informational", allows scalars (anything other than arrays and objects) such as `123` and `true` at the root level as ECMA does, warns about bad practices such as duplicated keys and broken Unicode strings, without explicitly forbidding them, though.
 6. 2014 - IETF [RFC 7159](https://tools.ietf.org/html/rfc7159) was released to fix a typo in RFC 7158, which was dated from "March 2013" instead of "March 2014".
-7. 2017 - IETF [RFC 8259](https://tools.ietf.org/html/rfc8259) was released in December 2017. It basically adds two things: 1) outside of closed eco-systems, JSON MUST be encoded in UTF-8 and 2) JSON text that is not networked transmitted MAY now add the byte ordrer mark `U+FEFF`, although this is not stated explicitely.
+7. 2017 - IETF [RFC 8259](https://tools.ietf.org/html/rfc8259) was released in December 2017. It basically adds two things: 1) outside of closed eco-systems, JSON MUST be encoded in UTF-8 and 2) JSON text that is not networked transmitted MAY now add the byte order mark `U+FEFF`, although this is not stated explicitly.
 
 Despite the clarifications they bring, RFC 7159 and 8259 contain several approximations and leaves many details loosely specified.
 
 For instance, RFC 8259 [mentions](https://tools.ietf.org/html/rfc8259#section-1) that a design goal of JSON was to be "a subset of JavaScript", but it's actually not. Specifically, JSON allows the Unicode line terminators `U+2028 LINE SEPARATOR` and `U+2029 PARAGRAPH SEPARATOR` to appear unescaped. But JavaScript specifies that strings cannot contains line terminators ([ECMA-262 - 7.8.4 String Literals](http://www.ecma-international.org/ecma-262/5.1/#sec-7.8.4)), and line terminators include... `U+2028` and `U+2029` ([7.3 Line Terminators](http://www.ecma-international.org/ecma-262/5.1/#sec-7.3)). The single fact that these two characters are allowed without escape in JSON strings while they are not in JavaScript implies that JSON is **not** a subset of JavaScript, despite the JSON design goals.
 
-Also, RFC 7159 is unclear about how a JSON parser should treat extreme number values, malformed Unicode strings, similar objects or handle recursion depth. Some corner cases are explicitely left free to implementations, while others suffer from contradictory statements.
+Also, RFC 7159 is unclear about how a JSON parser should treat extreme number values, malformed Unicode strings, similar objects or handle recursion depth. Some corner cases are explicitly left free to implementations, while others suffer from contradictory statements.
 
 To illustrate the poor precision of RFC 8259, I wrote a corpus of JSON test files and documented how selected JSON parsers chose to handle these files. You'll see that deciding if a test file should be parsed or not is not always straightforward. In my findings, there were no two parsers that exhibited the same behaviour, which may cause serious interoperability issues.
 
@@ -163,7 +163,7 @@ In practice, several parsers don't set a depth limit and crash after a certain t
     $ ./Xcode ~/x.json
     Segmentation fault: 11
 
-**White Spaces** - RFC 8259 grammar defines white spaces as `0x20` (space), `0x09` (tab), `0x0A` (line feed) and `0x0D` (carriage return). It allows white spaces before and after "structural characters" `[]{}:,`. So, we'll write passing tests like <CODE><U>20</U>[<U>090A</U>]<U>0D</U></CODE> and failing ones including all kinds of white spaces that are not explicitely allowed, such as `0x0C` form feed or <CODE>[<U>E281A0</U>]</CODE>, which is the UTF-8 encoding for `U+2060 WORD JOINER`.
+**White Spaces** - RFC 8259 grammar defines white spaces as `0x20` (space), `0x09` (tab), `0x0A` (line feed) and `0x0D` (carriage return). It allows white spaces before and after "structural characters" `[]{}:,`. So, we'll write passing tests like <CODE><U>20</U>[<U>090A</U>]<U>0D</U></CODE> and failing ones including all kinds of white spaces that are not explicitly allowed, such as `0x0C` form feed or <CODE>[<U>E281A0</U>]</CODE>, which is the UTF-8 encoding for `U+2060 WORD JOINER`.
 
 <TABLE class="monospace">
 <TR>
@@ -255,7 +255,7 @@ Most edge cases regarding arrays are opening/closing issues and nesting limit. T
 
 **Duplicated Keys** - [RFC 8259 section 4](https://tools.ietf.org/html/rfc8259#section-4) says that "The names within an object should be unique.". It does not prevent parsing objects where the same key does appear several times `{"a":1,"a":2}`, but lets parsers decide what to do in this case. The same section 4 even mentions that "(some) implementations report an error or fail to parse the object", without telling clearly if failing to parse such objects is compliant or not with the RFC and especially [section 9](https://tools.ietf.org/html/rfc8259#section-9): "A JSON parser MUST accept all texts that conform to the JSON grammar.".
 
-Variants of this special case include same key - same value `{"a":1,"a":1}`, and similar keys or values, where the similarity depends on how you compare strings. For example, the keys may be binary different but equivalent according to Unicode NFC normalization, such as in <CODE>{"<U>C3A9</U>:"NFC","<U>65CC81</U>":"NFD"}</CODE> where boths keys encode "é". Tests will also include `{"a":0,"a":-0}`.
+Variants of this special case include same key - same value `{"a":1,"a":1}`, and similar keys or values, where the similarity depends on how you compare strings. For example, the keys may be binary different but equivalent according to Unicode NFC normalization, such as in <CODE>{"<U>C3A9</U>:"NFC","<U>65CC81</U>":"NFD"}</CODE> where both keys encode "é". Tests will also include `{"a":0,"a":-0}`.
 
 <TABLE class="monospace">
 <TR>
@@ -309,7 +309,7 @@ The parsing of invalid UTF-8 will be implementation defined.
 
 **Byte Order Mark** - Former RFC 8259 [section 8.1](https://tools.ietf.org/html/rfc8259#section-8.1) stated "Implementations MUST NOT add a byte order mark to the beginning of a JSON text", "implementations (...) MAY ignore the presence of a byte order mark rather than treating it as an error".
 
-Now, RFC 8259 [section 8.1](https://tools.ietf.org/html/rfc8259#section-8.1) adds: "Implementations MUST NOT add a byte order mark (`U+FEFF`) to the beginning _of a networked-transmitted JSON text_.", which seems to imply that implemenatations may now add a BOM when JSON is not sent over the network.
+Now, RFC 8259 [section 8.1](https://tools.ietf.org/html/rfc8259#section-8.1) adds: "Implementations MUST NOT add a byte order mark (`U+FEFF`) to the beginning _of a networked-transmitted JSON text_.", which seems to imply that implementations may now add a BOM when JSON is not sent over the network.
 
 Tests with implementation defined will include a plain UTF-8 BOM with no other content, a UTF-8 BOM with a UTF-8 string, but also a UTF-8 BOM with a UTF-16 string, and a UTF-16 BOM with a UTF-8 string.
 
@@ -381,7 +381,7 @@ Codepoints outside of the BMP are represented by their escaped UTF-16 surrogates
 
 > The ABNF cannot at the same time allow non conformant Unicode codepoints (section 7) and states conformance to Unicode (section 1).
 
-The editors considered that the grammar should not be restricted, and that warning users about the fact that parsers behaviour was "unpredictable" ([RFC 8259 section 8.2](https://tools.ietf.org/html/rfc8259#section-8.2)) was enough. In other words, parsers MUST parse u-escaped invalid codepoints, but the result is undefined, hence the `i_` (implementation definded) prefix in the file name. According to the Unicode standard, invalid codepoints should be replaced by `U+FFFD REPLACEMENT CHARACTER`. People familiar with [Unicode complexity](http://seriot.ch/resources/talks_papers/i_love_unicode_softshake.pdf) won't be surprised that this replacement is not mandatory, and can be done in several ways (see [Unicode PR #121: Recommended Practice for Replacement Characters](http://unicode.org/review/pr-121.html)). So several parsers use replacement characters, while other keep the escaped form or produce an non-Unicode character (see [Section 5 - Parsing Contents](#5)).
+The editors considered that the grammar should not be restricted, and that warning users about the fact that parsers behaviour was "unpredictable" ([RFC 8259 section 8.2](https://tools.ietf.org/html/rfc8259#section-8.2)) was enough. In other words, parsers MUST parse u-escaped invalid codepoints, but the result is undefined, hence the `i_` (implementation defined) prefix in the file name. According to the Unicode standard, invalid codepoints should be replaced by `U+FFFD REPLACEMENT CHARACTER`. People familiar with [Unicode complexity](http://seriot.ch/resources/talks_papers/i_love_unicode_softshake.pdf) won't be surprised that this replacement is not mandatory, and can be done in several ways (see [Unicode PR #121: Recommended Practice for Replacement Characters](http://unicode.org/review/pr-121.html)). So several parsers use replacement characters, while other keep the escaped form or produce an non-Unicode character (see [Section 5 - Parsing Contents](#5)).
 
 **[Update 2016-11-03]** In the first version of this article, I treated non-characters such as `U+FDD0` to `U+10FFFE` the same was as invalid codepoints (`i_` tests). This classification was [challenged](https://github.com/nst/JSONTestSuite/issues/52) and I eventually changed the non-characters tests into `y_` tests.
 
@@ -703,7 +703,7 @@ Freddy is interesting because it is written by a famous organization of Cocoa de
 
 But, being [released in January 2016](https://www.bignerdranch.com/blog/introducing-freddy-an-open-source-framework-for-parsing-json-in-swift), Freddy is still young, and buggy. My test suite showed that unclosed structures such as `[1,` and `{"a":` used to crash the parser, as well as a string with a single space `" "`, so I opened [issue #199](https://github.com/bignerdranch/Freddy/issues/199) that was fixed within 1 day!
 
-Additionnally, I found that `"0e1"` was incorrectly rejected by the parser, so I opened [issue #198](https://github.com/bignerdranch/Freddy/issues/198), which was also fixed within 1 day.
+Additionally, I found that `"0e1"` was incorrectly rejected by the parser, so I opened [issue #198](https://github.com/bignerdranch/Freddy/issues/198), which was also fixed within 1 day.
 
 However, Freddy does still crash on 2016-10-18 when parsing `["`. I reported the bug in ([issue #206](https://github.com/bignerdranch/Freddy/issues/206)).
 
@@ -717,7 +717,7 @@ I tested [https://github.com/dominictarr/JSON.sh/](https://github.com/dominictar
 
 This Bash parser relies on a regex to find the control characters, which MUST be backslash-escaped according to RFC 8259. But Bash and JSON don't share the same definition of control characters.
 
-The regex uses the `:cntlr:` syntax to match control characters, which is a shorthand for `[x00-x1Fx7F]`. But according to JSON grammar, `0x7F DEL` is not part of control characters, and may appear unescaped.
+The regex uses the `:cntrl:` syntax to match control characters, which is a shorthand for `[x00-x1Fx7F]`. But according to JSON grammar, `0x7F DEL` is not part of control characters, and may appear unescaped.
 
      00 nul   01 soh   02 stx   03 etx   04 eot   05 enq   06 ack   07 bel
      08 bs    09 ht    0a nl    0b vt    0c np    0d cr    0e so    0f si
@@ -849,7 +849,7 @@ All of the above testing architecture will only tell if a parser would parse a J
 
 For example, a parser may parse the u-escaped invalid Unicode character (`"uDEAD"`) without error, but what will the result be like? a replacement character, or something else, who knows? RFC 8259 is silent about it.
 
-Similarily, extreme numbers such as `0.00000000000000000000001` or `-0` can be parsed, but what should the result be? RFC 8259 doesn't make a distinction between integers and doubles, or zero and -zero. It doesn't even say if numbers can be converted into strings or not.
+Similarly, extreme numbers such as `0.00000000000000000000001` or `-0` can be parsed, but what should the result be? RFC 8259 doesn't make a distinction between integers and doubles, or zero and -zero. It doesn't even say if numbers can be converted into strings or not.
 
 And what about objects with the same keys (`{"a":1,"a":2}`)? Or same keys and same values (`{"a":1,"a":1}`)? And how should a parser compare object keys?? Should it use binary comparison or a Unicode normal form such as NFC? Here again, RFC is silent
 
@@ -865,7 +865,7 @@ Below is an inexhaustive list of some striking differences between resulting rep
 
 - `1.000000000000000005` is generally converted into the float `1.0`, but Rust 1.12.0 / json 0.10.2 will keep the original precision and use the number `1.000000000000000005`
 
-- `1E-999` is generally converted into float or double `0.0`, but Swift Freddy yields the string `"1E-999"`. Swift Apple JSONSerializattion and Obj-C 
+- `1E-999` is generally converted into float or double `0.0`, but Swift Freddy yields the string `"1E-999"`. Swift Apple JSONSerialization and Obj-C 
 JSONKit will simply refuse to parse it and return an error.
 
 - `10000000000000000999` may be converted into a double (Swift Apple JSONSerialization), an unsigned long long (Objective-C JSONKit) or a string (Swift Freddy). It is to be noted that C cJSON will parse this number as a double, but loses precision in the process, resulting in a new number `10000000000000002048` (note the last four digits).
@@ -874,7 +874,7 @@ JSONKit will simply refuse to parse it and return an error.
 
 - In <CODE>{"<U>C3A9</U>:"NFC","<U>65CC81</U>":"NFD"}</CODE> keys are NFC and NFD representations of "é". Most parsers will yield the two keys, except Swift parsers Apple JSONSerialization and Freddy, where dictionaries first normalize keys before testing them for equality.
 
-- `	{"a":1,"a":2}` does generally result in `{"a":2}` (Freddy, SBJSON, Go, Python, JavaScript, Ruby, Rust, Lua dksjon), but may also result in `{"a":1}` (Obj-C Apple NSJSONSerialization, Swift Apple JSONSerialization, Swift Freddy), or `{"a":1,"a":2}` (cJSON, R, Lua JSON).
+- `	{"a":1,"a":2}` does generally result in `{"a":2}` (Freddy, SBJSON, Go, Python, JavaScript, Ruby, Rust, Lua dkjson), but may also result in `{"a":1}` (Obj-C Apple NSJSONSerialization, Swift Apple JSONSerialization, Swift Freddy), or `{"a":1,"a":2}` (cJSON, R, Lua JSON).
 
 - `	{"a":1,"a":1}` does generally result in `{"a":1}`, but is parsed as `{"a":1,"a":1}` in cJSON, R and Lua JSON.
 
@@ -884,9 +884,9 @@ JSONKit will simply refuse to parse it and return an error.
 
 - `["Au0000B"]` contains the u-escaped form of the `0x00 NUL` character, which is likely to cause problems in C-based JSON parsers. Most parsers handle this payload gracefully, but JSONKit and cJSON won't parse it. Interestingly, Freddy yields only `["A"]` (the string stop after unescaping byte `0x00`).
 
-- `["uD800"]` is the u-escaped form of `U+D800`, an invalid lone UTF-16 surrogate. Many parsers will fail and return an error, despite the string being perfectly valid according to JSON grammar. Python leaves the string untouched and yields `["uD800"]`. Go and JavaScript replace the offending chacracter with "�" `U+FFFD REPLACEMENT CHARACTER` <CODE>["<U>EFBFBD</U>"]</CODE>, R rjson and Lua dkjson simply translate the codepoint into its UTF-8 representation <CODE>["<U>EDA080</U>"]</CODE>. R jsonlite and Lua JSON 20160728.17 replace the offending codepoint with a question mark `["?"]`.
+- `["uD800"]` is the u-escaped form of `U+D800`, an invalid lone UTF-16 surrogate. Many parsers will fail and return an error, despite the string being perfectly valid according to JSON grammar. Python leaves the string untouched and yields `["uD800"]`. Go and JavaScript replace the offending character with "�" `U+FFFD REPLACEMENT CHARACTER` <CODE>["<U>EFBFBD</U>"]</CODE>, R rjson and Lua dkjson simply translate the codepoint into its UTF-8 representation <CODE>["<U>EDA080</U>"]</CODE>. R jsonlite and Lua JSON 20160728.17 replace the offending codepoint with a question mark `["?"]`.
 
-- `["EDA080"]` is the non-escaped, UTF-8 form or `U+D800`, the invalid lone UTF-16 surrogate discussed in previous point. This string is not valid UTF-8 and should be rejected  (see [section 2.5 Strings - Raw non-Unicode Characters](#25)). In practice however, several parsers leave the string untouched `["EDA080"]` such as cJSON, R rjson and jsonlite, Lua JSON, Lua dkjson and Ruby. Go and Javacript yield <CODE>["<U>EFBFBDEFBFBDEFBFBD</U>"]</CODE> that is three replacement characters (one per byte). Interestingly, Python 2 converts the sequence into its unicode-escaped form `["ud800"]`, while Python 3 thows a `UnicodeDecodeError` exception.
+- `["EDA080"]` is the non-escaped, UTF-8 form or `U+D800`, the invalid lone UTF-16 surrogate discussed in previous point. This string is not valid UTF-8 and should be rejected  (see [section 2.5 Strings - Raw non-Unicode Characters](#25)). In practice however, several parsers leave the string untouched `["EDA080"]` such as cJSON, R rjson and jsonlite, Lua JSON, Lua dkjson and Ruby. Go and JavaScript yield <CODE>["<U>EFBFBDEFBFBDEFBFBD</U>"]</CODE> that is three replacement characters (one per byte). Interestingly, Python 2 converts the sequence into its unicode-escaped form `["ud800"]`, while Python 3 throws a `UnicodeDecodeError` exception.
 
 - `["uD800uD800"]` makes some parsers go nuts. R jsonlite yields `["U00010000"]`, while Ruby parser yields <CODE>["<U>F0908080</U>"]</CODE>. I still don't get where this value comes from.
 
@@ -942,7 +942,7 @@ As a final word, I keep on wondering why "fragile" formats such as HTML, CSS and
 ### <a id="8"></a> 8. Appendix
 
 1. Parsing Results [http://seriot.ch/json/parsing.html](http://seriot.ch/json/parsing.html), generated automatically for [section 4](#4)
-2. Tranform Results [http://seriot.ch/json/transform.html](http://seriot.ch/json/transform.html), created manually for [section 6](#6)
+2. Transform Results [http://seriot.ch/json/transform.html](http://seriot.ch/json/transform.html), created manually for [section 6](#6)
 3. JSONTestSuite [https://github.com/nst/JSONTestSuite](https://github.com/nst/JSONTestSuite), contains all tests and code
 4. STJSON [https://github.com/nst/STJSON](https://github.com/nst/STJSON), contains my Swift 3 JSON parser
 
