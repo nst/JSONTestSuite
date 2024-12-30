@@ -192,6 +192,16 @@ programs = {
            "url":"https://pypi.python.org/pypi/demjson",
            "commands":["/usr/bin/env", "jsonlint", "--quiet", "--strict", "--allow=non-portable,duplicate-keys,zero-byte"]
        },
+   "Python jsoncgx (allow_comments: off)": # pip install jsoncgx
+       {
+           "url":"https://pypi.org/project/jsoncgx/",
+           "commands":["/usr/bin/env", "python3", os.path.join(PARSERS_DIR, "test_jsoncgx.py"), "off"]
+       },
+   "Python jsoncgx (allow_comments: on)": # pip install jsoncgx
+       {
+           "url":"https://pypi.org/project/jsoncgx/",
+           "commands":["/usr/bin/env", "python3", os.path.join(PARSERS_DIR, "test_jsoncgx.py"), "on"]
+       },
    "Perl Cpanel::JSON::XS":
        {
            "url":"https://metacpan.org/pod/Cpanel::JSON::XS",
