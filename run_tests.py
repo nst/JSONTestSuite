@@ -407,6 +407,11 @@ programs = {
            "url":"",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_json_tree/TestJSONParsing.jar")]
        },
+   "Java Fastjson2 2.0.53":
+       {
+           "url":"",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_fastjson_2_0_53/TestJSONParsing.jar")]
+       },
    "Scala Dijon 0.3.0":
        {
            "url":"",
