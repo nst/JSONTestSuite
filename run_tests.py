@@ -518,6 +518,11 @@ programs = {
        {
            "url":"https://github.com/nlohmann/json",
            "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
+       },
+   "C++ Jsonpp v0.1.1":
+       {
+            "url":"https://github.com/mikami-w/jsonpp",
+            "commands":[os.path.join(PARSERS_DIR, "test_jsonpp_0_1_1/bin/test_jsonpp")]
        }
 }
 
