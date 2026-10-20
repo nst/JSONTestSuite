@@ -432,6 +432,11 @@ programs = {
            "url":"https://github.com/michel-kraemer/actson",
            "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_java_actson_1_2_0/TestJSONParsing.jar")]
        },
+   "Kotlin essential-kson 2.17":
+       {
+           "url":"https://github.com/arkanovicz/essential-kson",
+           "commands":["/usr/bin/java", "-jar", os.path.join(PARSERS_DIR, "test_kotlin_essential_kson_2_17/TestJSONParsing.jar")]
+       },
    "Haskell Aeson 0.11.2.1":
        {
            "url":"https://github.com/bos/aeson",
