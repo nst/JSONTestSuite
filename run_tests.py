@@ -102,6 +102,11 @@ programs = {
            "url":"",
            "commands":[os.path.join(PARSERS_DIR, "test_fpc/test_json")]
        },
+   "Delphi encoding.json":
+       {
+           "url":"",
+           "commands":[os.path.join(PARSERS_DIR, "test_delphi_encoding_json/test_json")]
+       },
    "Xidel Internet Tools":
        {
            "url":"http://www.videlibri.de/xidel.html",
